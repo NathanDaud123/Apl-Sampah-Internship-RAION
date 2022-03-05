@@ -4,7 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
-import user.example.sampah.ui.login.activity_main3
 
 
 class MainActivity : AppCompatActivity() {
@@ -15,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Handler().postDelayed({
-            val home = Intent(this@MainActivity,activity_main3::class.java)
+            val home = Intent(this@MainActivity,MainActivity2::class.java)
             startActivity(home)
             finish()
         }, waktu_loading.toLong())
