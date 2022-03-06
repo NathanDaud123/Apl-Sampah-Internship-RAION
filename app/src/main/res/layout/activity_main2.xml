@@ -45,7 +45,7 @@
         app:layout_constraintTop_toBottomOf="@+id/mainJudul" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/lewati"
         android:layout_width="136dp"
         android:layout_height="59dp"
         android:backgroundTint="#FFFFFF"
@@ -77,6 +77,17 @@
         app:layout_constraintVertical_bias="0.825"
         app:rippleColor="#77B1A3"
         app:strokeColor="#77B1A3" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager"
+        android:layout_width="268dp"
+        android:layout_height="273dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
