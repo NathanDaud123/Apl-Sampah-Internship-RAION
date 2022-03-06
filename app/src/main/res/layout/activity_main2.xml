@@ -77,6 +77,11 @@
         app:layout_constraintVertical_bias="0.825"
         app:rippleColor="#77B1A3"
         app:strokeColor="#77B1A3" />
+    
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpager"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
