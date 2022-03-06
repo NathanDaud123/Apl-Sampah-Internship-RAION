@@ -78,15 +78,5 @@
         app:rippleColor="#77B1A3"
         app:strokeColor="#77B1A3" />
 
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/viewpager"
-        android:layout_width="270dp"
-        android:layout_height="272dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.148" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
