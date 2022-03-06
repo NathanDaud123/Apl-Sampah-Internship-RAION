@@ -120,13 +120,12 @@
         android:layout_height="43dp"
         android:hint="Username"
         android:textColor="@color/warna"
-
-
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView13"
         app:layout_constraintTop_toTopOf="@+id/imageView13"
         app:layout_constraintVertical_bias="1.0"
-        tools:layout_editor_absoluteX="57dp" />
+        tools:layout_editor_absoluteX="57dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView14"
@@ -154,13 +153,12 @@
         android:layout_height="43dp"
         android:hint="email"
         android:textColor="@color/warna"
-
-
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView15"
         app:layout_constraintTop_toTopOf="@+id/imageView14"
         app:layout_constraintVertical_bias="1.0"
-        tools:layout_editor_absoluteX="57dp" />
+        tools:layout_editor_absoluteX="57dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView16"
@@ -200,13 +198,12 @@
         android:layout_height="43dp"
         android:hint="nomor telepon"
         android:textColor="@color/warna"
-
-
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView14"
         app:layout_constraintTop_toTopOf="@+id/imageView14"
         app:layout_constraintVertical_bias="1.0"
-        tools:layout_editor_absoluteX="57dp" />
+        tools:layout_editor_absoluteX="57dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/username5"
@@ -214,13 +211,12 @@
         android:layout_height="43dp"
         android:hint="*************"
         android:textColor="@color/warna"
-
-
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView17"
         app:layout_constraintTop_toTopOf="@+id/imageView17"
         app:layout_constraintVertical_bias="1.0"
-        tools:layout_editor_absoluteX="57dp" />
+        tools:layout_editor_absoluteX="57dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/username6"
@@ -228,13 +224,12 @@
         android:layout_height="43dp"
         android:hint="*************"
         android:textColor="@color/warna"
-
-
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView16"
         app:layout_constraintTop_toTopOf="@+id/imageView16"
         app:layout_constraintVertical_bias="1.0"
-        tools:layout_editor_absoluteX="57dp" />
+        tools:layout_editor_absoluteX="57dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView20"
@@ -244,7 +239,8 @@
         app:layout_constraintTop_toTopOf="@+id/username5"
         app:layout_constraintVertical_bias="0.333"
         app:srcCompat="@drawable/tutup"
-        tools:layout_editor_absoluteX="325dp" />
+        tools:layout_editor_absoluteX="325dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView21"
@@ -254,21 +250,22 @@
         app:layout_constraintTop_toTopOf="@+id/username6"
         app:layout_constraintVertical_bias="0.375"
         app:srcCompat="@drawable/tutup"
-        tools:layout_editor_absoluteX="325dp" />
+        tools:layout_editor_absoluteX="325dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:tint="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/imageView18"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.124"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView17"
         app:layout_constraintVertical_bias="0.068"
-        app:srcCompat="@drawable/ic_baseline_check_box_outline_blank_24" />
+        app:srcCompat="@drawable/ic_baseline_check_box_outline_blank_24"
+        app:tint="@color/white" />
 
     <TextView
         android:id="@+id/textView9"
@@ -290,12 +287,12 @@
         android:id="@+id/imageView23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:tint="@color/white"
         app:layout_constraintBottom_toBottomOf="@+id/imageView22"
         app:layout_constraintEnd_toEndOf="@+id/imageView22"
         app:layout_constraintStart_toStartOf="@+id/imageView22"
         app:layout_constraintTop_toTopOf="@+id/imageView22"
-        app:srcCompat="@drawable/ic_baseline_check_24" />
+        app:srcCompat="@drawable/ic_baseline_check_24"
+        app:tint="@color/white" />
 
     <TextView
         android:id="@+id/textView10"
