@@ -2,7 +2,7 @@ package user.example.sampah
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-
+import androidx.viewpager2.widget.ViewPager2
 
 
 class MainActivity2 : AppCompatActivity() {
@@ -25,7 +25,9 @@ class MainActivity2 : AppCompatActivity() {
 
         adapters=Adapters(this)
         adapters.setContentList(list)
+        val viewpager = findViewById<ViewPager2>(R.id.viewpager)
         viewpager.adapter=adapters
+
 
 
 
