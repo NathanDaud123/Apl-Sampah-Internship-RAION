@@ -9,7 +9,7 @@ import android.widget.TextView
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
 
-class MainActivity3 : AppCompatActivity() {
+class LoginPage : AppCompatActivity() {
 
     private lateinit var mataBuka: ImageButton
     private lateinit var password: EditText
@@ -21,7 +21,7 @@ class MainActivity3 : AppCompatActivity() {
 
         var backButton = findViewById<ImageButton>(R.id.back_button)
         backButton.setOnClickListener {
-            var pindah = Intent(this@MainActivity3, MainActivity2::class.java)
+            var pindah = Intent(this@LoginPage, WelcomingPage::class.java)
             startActivity(pindah)
         }
         password = findViewById(R.id.password)
@@ -40,7 +40,7 @@ class MainActivity3 : AppCompatActivity() {
 
         var daftar = findViewById<TextView>(R.id.daftar)
         daftar.setOnClickListener {
-            var pindah = Intent(this@MainActivity3, MainActivity4::class.java)
+            var pindah = Intent(this@LoginPage, RegistrationPage::class.java)
 
             startActivity(pindah)
         }

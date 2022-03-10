@@ -13,8 +13,18 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Untuk button page2. -->
     </style>
+
     <style name="buttonstyle1" parent="Theme.AppCompat.Light">
         <item name="buttonStyle">@color/white</item>
         <item name="android:colorButtonNormal">@color/white</item>
     </style>
+
+    <style name="NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#77B1A3"
     android:scrollbarSize="4dp"
-    tools:context=".MainActivity4">
+    tools:context=".RegistrationPage">
 
     <ImageView
         android:id="@+id/imageView12"
