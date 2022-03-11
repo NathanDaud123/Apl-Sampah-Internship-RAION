@@ -8,4 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="warna">#77B1A3</color>
+    <color name="baseblack">#1D1D1F</color>
+    <color name="offblack">#1D1D1F</color>
+    <color name="kremHalus">#E5E5E5</color>
+    <color name="DarkGrey">#51545B</color>
+
 </resources>
