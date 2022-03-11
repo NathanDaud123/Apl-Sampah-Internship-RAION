@@ -6,8 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.TextView
 
-class MainActivity4 : AppCompatActivity(), View.OnClickListener {
-
+class RegistrationPage : AppCompatActivity(), View.OnClickListener {
     private lateinit var MasukButtonpage4 : TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,7 +22,7 @@ class MainActivity4 : AppCompatActivity(), View.OnClickListener {
     override fun onClick(p0: View) {
         when(p0.id) {
             R.id.MasukButtonpage4 -> {
-                val intenBiasa = Intent(this@MainActivity4, MainActivity3::class.java)
+                val intenBiasa = Intent(this@RegistrationPage, WelcomingPage::class.java)
                 startActivity(intenBiasa)
             }
 
