@@ -11,7 +11,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 
 class MainActivity2 : AppCompatActivity() {
 
-    lateinit var adapters: Adapters
+//    lateinit var adapters: Adapters
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,7 +37,7 @@ class MainActivity2 : AppCompatActivity() {
                 gambar1.setImageResource(R.drawable.page2gambar3)
                 itung++
             } else if (itung == 2) {
-                var nextPage = Intent(this,MainActivity3::class.java)
+                var nextPage = Intent(this,LoginPage::class.java)
                 startActivity(nextPage)
             }
         }

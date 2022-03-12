@@ -12,5 +12,8 @@
     <color name="offblack">#1D1D1F</color>
     <color name="kremHalus">#E5E5E5</color>
     <color name="DarkGrey">#51545B</color>
+    <color name="PrimaryGreen">#77B1A3</color>
+    <color name="MediumGrey">#7A7D84</color>
+
 
 </resources>
