@@ -23,7 +23,8 @@
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/RHijau" />
+        app:srcCompat="@drawable/RHiijau"
+        />
 
     <ImageView
         android:id="@+id/imageView24"
@@ -35,7 +36,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView19"
         app:layout_constraintVertical_bias="0.144"
-        app:srcCompat="@drawable/EHIjau" />
+        app:srcCompat="@drawable/hijau" />
 
     <ImageView
         android:id="@+id/imageView25"
@@ -375,9 +376,10 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
         android:src="@drawable/export"
         app:layout_constraintBottom_toBottomOf="@+id/imageView27"
-        tools:layout_editor_absoluteX="78dp" />
+        app:layout_constraintStart_toStartOf="@+id/imageView27" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
