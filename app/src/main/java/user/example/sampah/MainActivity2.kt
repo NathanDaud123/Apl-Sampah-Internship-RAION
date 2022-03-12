@@ -11,8 +11,6 @@ import androidx.activity.result.contract.ActivityResultContracts
 
 class MainActivity2 : AppCompatActivity() {
 
-//    lateinit var adapters: Adapters
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
@@ -22,6 +20,10 @@ class MainActivity2 : AppCompatActivity() {
         var teksganti = findViewById<TextView>(R.id.TeksGantiganti)
         var judulganti = findViewById<TextView>(R.id.mainJudulgantiganti)
         var gambar1 = findViewById<ImageView>(R.id.page2gambar1)
+        var bulet1 = findViewById<ImageView>(R.id.buletprogress1)
+        var bulet2 = findViewById<ImageView>(R.id.buletprogress2)
+        var bulet3 = findViewById<ImageView>(R.id.buletprogress3)
+
         var itung: Int = 0
 
         lanjut.setOnClickListener {
@@ -29,12 +31,16 @@ class MainActivity2 : AppCompatActivity() {
                 teksganti.text = "Sampah akan diambil oleh kolektor kami sesuai alamat anda."
                 judulganti.text = "Tunggu Kolektor"
                 gambar1.setImageResource(R.drawable.page2gambar2)
+                bulet1.setImageResource(R.drawable.ellipse_68)
+                bulet2.setImageResource(R.drawable.ellipse_67)
                 itung++
             } else if (itung == 1){
                 teksganti.text = "Tukarkan sampah yang sudah anda kumpulkan menjadi uang yang dapat diperbelanjakan."
                 judulganti.text = "Dapatkan Uang"
                 lanjut.text = "Selesai"
                 gambar1.setImageResource(R.drawable.page2gambar3)
+                bulet2.setImageResource(R.drawable.ellipse_68)
+                bulet3.setImageResource(R.drawable.ellipse_67)
                 itung++
             } else if (itung == 2) {
                 var nextPage = Intent(this,LoginPage::class.java)
@@ -42,10 +48,5 @@ class MainActivity2 : AppCompatActivity() {
             }
         }
 
-//        var lewati = findViewById<Button>(R.id.lewati)
-//        lewati.setOnClickListener{
-//            var lanjut3 = Intent(this,MainActivity3::class.java)
-//            startActivity(lanjut3)
-//        }
     }
 }

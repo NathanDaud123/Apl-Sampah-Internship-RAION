@@ -91,5 +91,37 @@
         app:layout_constraintVertical_bias="0.159"
         app:srcCompat="@drawable/page2gambar1" />
 
+    <ImageView
+        android:id="@+id/buletprogress1"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/buletprogress2"
+        app:layout_constraintTop_toBottomOf="@+id/TeksGantiganti"
+        app:srcCompat="@drawable/ellipse_67" />
+
+    <ImageView
+        android:id="@+id/buletprogress2"
+        android:layout_width="15dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TeksGantiganti"
+        app:srcCompat="@drawable/ic_outline_circle_24"
+        app:tint="@color/PrimaryGreen" />
+
+    <ImageView
+        android:id="@+id/buletprogress3"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="164dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TeksGantiganti"
+        app:srcCompat="@drawable/ic_outline_circle_24"
+        app:tint="@color/PrimaryGreen" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
