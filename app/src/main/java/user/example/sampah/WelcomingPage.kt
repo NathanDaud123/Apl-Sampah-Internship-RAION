@@ -30,7 +30,7 @@ class WelcomingPage : AppCompatActivity() {
                 teksganti.text = "Sampah akan diambil oleh kolektor kami sesuai alamat anda."
                 judulganti.text = "Tunggu Kolektor"
                 gambar1.setImageResource(R.drawable.page2gambar2)
-                bulet1.setImageResource(R.drawable.ellipse_68)
+                bulet1.setImageResource(R.drawable.ic_outline_circle_24)
                 bulet2.setImageResource(R.drawable.ellipse_67)
                 itung++
             } else if (itung == 1){
@@ -38,7 +38,7 @@ class WelcomingPage : AppCompatActivity() {
                 judulganti.text = "Dapatkan Uang"
                 lanjut.text = "Selesai"
                 gambar1.setImageResource(R.drawable.page2gambar3)
-                bulet2.setImageResource(R.drawable.ellipse_68)
+                bulet2.setImageResource(R.drawable.ic_outline_circle_24)
                 bulet3.setImageResource(R.drawable.ellipse_67)
                 itung++
             } else if (itung == 2) {
