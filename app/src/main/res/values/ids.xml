@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="lewati" type="id" />
+    <item name="kalimat1" type="id" />
+    <item name="komen1" type="id" />
+    <item name="kalimat2" type="id" />
+    <item name="komen2" type="id" />
+    <item name="nama5" type="id" />
 </resources>

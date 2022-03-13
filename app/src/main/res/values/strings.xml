@@ -100,4 +100,7 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="action_settings">Settings</string>
+    <string name="type_something_here">Type something here...</string>
+    <string name="bumi_adalah_rumah_kita_sudah_sepantasnya_kita_merawatnya_agar_menjadi_tempat_yang_aman_dan_nyaman_untuk_beristirahat">Bumi adalah rumah kita, sudah sepantasnya kita merawatnya agar menjadi tempat yang aman dan nyaman untuk beristirahat</string>
+
 </resources>
