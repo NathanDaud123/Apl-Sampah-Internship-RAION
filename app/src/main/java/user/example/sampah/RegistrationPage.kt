@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.EditText
+import android.widget.ImageView
 import android.widget.TextView
 
 class RegistrationPage : AppCompatActivity(), View.OnClickListener {
@@ -23,6 +25,14 @@ class RegistrationPage : AppCompatActivity(), View.OnClickListener {
             var inten = Intent(this, LoginPage::class.java)
             startActivity(inten)
         }
+
+        //button hide password
+        var teksKataSandi = findViewById<EditText>(R.id.editTextTextPassword)
+        var hiderKataSandi = findViewById<ImageView>(R.id.hiderKataSandi)
+
+//        hiderKataSandi.setOnClickListener(
+//            teksKataSandi.text = "wow"
+//        )
 
 
     }
