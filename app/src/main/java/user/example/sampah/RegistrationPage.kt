@@ -17,6 +17,14 @@ class RegistrationPage : AppCompatActivity(), View.OnClickListener {
 
         MasukButtonpage4.setOnClickListener(this)
 
+        //page register button daftar ke daftar page
+        var buttonDaftar = findViewById<TextView>(R.id.buttonDaftarRegister)
+        buttonDaftar.setOnClickListener {
+            var inten = Intent(this, LoginPage::class.java)
+            startActivity(inten)
+        }
+
+
     }
 
     override fun onClick(p0: View) {

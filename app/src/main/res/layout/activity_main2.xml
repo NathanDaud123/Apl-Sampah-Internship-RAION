@@ -7,17 +7,6 @@
     android:background="@color/kremHalus"
     tools:context=".WelcomingPage">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="272dp"
-        android:layout_height="272dp"
-        android:layout_marginTop="92dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/rectangle_1" />
-
     <TextView
         android:id="@+id/mainJudulgantiganti"
         android:layout_width="wrap_content"
@@ -33,12 +22,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/page2gambar1" />
 
+
     <TextView
         android:id="@+id/TeksGantiganti"
         android:layout_width="295dp"
         android:layout_height="105dp"
         android:layout_marginTop="16dp"
-        android:fontFamily="@font/poppins_thin"
+        android:fontFamily="@font/rubik_bold"
         android:text="Kamu bisa mengumpulkan sampah yang ada di lingkungan sekitarmu untuk dijual."
         android:textAlignment="center"
         android:textColor="@color/DarkGrey"
@@ -47,9 +37,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mainJudulgantiganti"
-        app:layout_constraintVertical_bias="0.0" />
-
-
+        app:layout_constraintVertical_bias="0.006" />
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -90,6 +78,41 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.159"
         app:srcCompat="@drawable/page2gambar1" />
+
+    <ImageView
+        android:id="@+id/buletprogress1"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/buletprogress2"
+        app:layout_constraintTop_toBottomOf="@+id/TeksGantiganti"
+        app:srcCompat="@drawable/ellipse_67" />
+
+    <ImageView
+        android:id="@+id/buletprogress2"
+        android:layout_width="15dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TeksGantiganti"
+        app:srcCompat="@drawable/ic_outline_circle_24"
+        app:tint="@color/PrimaryGreen" />
+
+    <ImageView
+        android:id="@+id/buletprogress3"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="164dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/buletprogress2"
+        app:layout_constraintTop_toBottomOf="@+id/TeksGantiganti"
+        app:srcCompat="@drawable/ic_outline_circle_24"
+        app:tint="@color/PrimaryGreen" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
