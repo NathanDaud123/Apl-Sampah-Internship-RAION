@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
         <activity
+            android:name=".KomunitasPage"
+            android:exported="false" />
+        <activity
             android:name=".AktivitasPage"
             android:exported="false" />
         <activity

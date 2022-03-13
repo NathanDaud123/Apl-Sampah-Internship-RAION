@@ -18,23 +18,18 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.541"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.427"
+        app:layout_constraintBottom_toTopOf="@id/text_sandi"
+        app:layout_constraintStart_toStartOf="@+id/text_email"
+        app:layout_constraintTop_toBottomOf="@id/text_email"
         app:srcCompat="@drawable/luaran" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.115"
+        app:layout_constraintBottom_toTopOf="@id/text_lupa"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/text_sandi"
         app:srcCompat="@drawable/luaran" />
 
     <EditText
@@ -42,16 +37,15 @@
         android:layout_width="277dp"
         android:layout_height="30dp"
         android:background="@android:color/transparent"
-        android:hint="andabagasaprianto@gmail.com"
+        android:hint="@string/type_something_here"
         android:inputType="textEmailAddress"
         android:selectAllOnFocus="true"
         android:textAllCaps="false"
-        android:textColor="#77B1A3"
-        android:textColorHint="#77B1A3"
+        android:textColor="#7A7D84"
+        android:textColorHint="#7A7D84"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.355"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView" />
 
@@ -61,13 +55,13 @@
         android:layout_height="28dp"
         android:layout_marginTop="5dp"
         android:background="@android:color/transparent"
-        android:hint="**********"
+        android:hint="@string/type_something_here"
         android:imeActionLabel="@string/action_sign_in_short"
         android:imeOptions="actionDone"
         android:inputType="textPassword"
         android:selectAllOnFocus="true"
-        android:textColor="#77B1A3"
-        android:textColorHint="#77B1A3"
+        android:textColor="#7A7D84"
+        android:textColorHint="#7A7D84"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
@@ -80,57 +74,50 @@
         android:id="@+id/text_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        android:text="Email"
-        android:textColor="#FFFFFF"
+        android:layout_marginTop="100sp"
+        android:fontFamily="@font/poppins"
+        android:text="Username/Email"
+        android:textColor="@color/black"
+        android:layout_marginStart="5sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.077"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="@+id/masuk_awal"
+        app:layout_constraintTop_toBottomOf="@+id/masuk_awal"/>
 
     <TextView
         android:id="@+id/text_sandi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/poppins"
         android:text="Kata Sandi"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.087"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"/>
 
     <TextView
         android:id="@+id/text_lupa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
         android:text="Lupa Kata Sandi ?"
-        android:textColor="#FFFFFF"
+        android:fontFamily="@font/poppins"
+        android:textColor="#000000"
         android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.822"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.233" />
+        app:layout_constraintTop_toBottomOf="@id/imageView2"
+        app:layout_constraintEnd_toEndOf="@id/imageView2"/>
 
     <TextView
         android:id="@+id/text_ataumasuk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:layout_marginTop="20sp"
         android:text="atau masuk dengan"
         android:textColor="#FFFFFF"
         android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.736" />
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <ImageView
         android:id="@+id/image_kotak"
@@ -181,26 +168,29 @@
         android:id="@+id/text_belum_daftar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Belum terdaftar?             di sini"
-        android:textColor="#FFFFFF"
+        android:fontFamily="@font/poppins"
+        android:text="Belum terdaftar?                          di sini"
+        android:textColor="#000000"
         android:textSize="18dp"
+        android:layout_marginBottom="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_kotak2"
         app:layout_constraintVertical_bias="0.917" />
 
     <TextView
         android:id="@+id/daftar"
         android:layout_width="84dp"
         android:layout_height="23dp"
-        android:text="  Daftar"
-        android:textColor="#E1E4DD"
+        android:fontFamily="@font/poppins"
+        android:text="Daftar"
+        android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/text_belum_daftar"
         app:layout_constraintEnd_toEndOf="@+id/text_belum_daftar"
-        app:layout_constraintHorizontal_bias="0.831"
+        app:layout_constraintHorizontal_bias="0.814"
         app:layout_constraintStart_toStartOf="@+id/text_belum_daftar"
         app:layout_constraintTop_toTopOf="@+id/text_belum_daftar"
         app:layout_constraintVertical_bias="0.0" />
@@ -220,12 +210,12 @@
 
     <TextView
         android:id="@+id/masuk_awal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_width="342dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="25sp"
         android:fontFamily="@font/poppins"
-        android:text="Masuk"
-        android:textColor="#77B1A3"
+        android:text="Selamat Datang Kembali!"
+        android:textColor="@color/black"
         android:textSize="32sp"
         android:typeface="normal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -237,16 +227,17 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="306dp"
-        android:layout_height="51dp"
+        android:layout_width="305dp"
+        android:layout_height="69dp"
         android:backgroundTint="#FFFFFF"
         android:text="Masuk"
-        android:textColor="#77B1A3"
+        android:textColor="#000000"
+        android:fontFamily="@font/poppins"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.664" />
+        app:layout_constraintVertical_bias="0.671" />
 
     <ImageButton
         android:id="@+id/mataBuka"
