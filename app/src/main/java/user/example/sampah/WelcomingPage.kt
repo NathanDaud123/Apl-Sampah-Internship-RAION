@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 
@@ -22,10 +23,11 @@ class WelcomingPage : AppCompatActivity() {
         var bulet1 = findViewById<ImageView>(R.id.buletprogress1)
         var bulet2 = findViewById<ImageView>(R.id.buletprogress2)
         var bulet3 = findViewById<ImageView>(R.id.buletprogress3)
+        var tombolGambar = findViewById<ImageButton>(R.id.imageButton)
 
         var itung: Int = 0
 
-        lanjut.setOnClickListener {
+        tombolGambar.setOnClickListener {
             if (itung == 0) {
                 teksganti.text = "Sampah akan diambil oleh kolektor kami sesuai alamat anda."
                 judulganti.text = "Tunggu Kolektor"
