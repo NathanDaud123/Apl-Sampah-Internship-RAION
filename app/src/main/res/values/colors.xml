@@ -14,6 +14,7 @@
     <color name="DarkGrey">#51545B</color>
     <color name="PrimaryGreen">#77B1A3</color>
     <color name="MediumGrey">#7A7D84</color>
+    <color name="NeutralWhite">#FAFAFC</color>
 
 
 </resources>
