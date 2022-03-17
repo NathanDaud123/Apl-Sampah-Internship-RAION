@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PickUp">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/back_hijau"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/desk_awal"
+        app:layout_constraintTop_toTopOf="parent">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/pick_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:layout_marginBottom="25sp"
+        android:text="Pick Up"
+        android:textColor="@color/warna"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/desk_awal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.303"
+        app:layout_constraintStart_toEndOf="@id/back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/desk_awal"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="5sp"
+        android:layout_marginTop="30dp"
+        android:text="Jika menggunakan layanan Pick Up, kolektor kami akan menjemput sampah kamu."
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="15sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/back"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/back" />
+
+    <TextView
+        android:id="@+id/kategori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kategori Sampah"
+        android:fontFamily="@font/poppins"
+        android:textSize="21dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/desk_awal"
+        app:layout_constraintStart_toStartOf="@id/desk_awal"
+        android:layout_marginTop="20sp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="5sp"
+        android:text="Pilih kategori sampah yang ingin kamu jual untuk mengetahui TrashShelter terdekat."
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@id/desk_awal"
+        app:layout_constraintStart_toStartOf="@id/kategori"
+        app:layout_constraintTop_toBottomOf="@id/kategori">
+
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/kertas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/kertas"
+        app:layout_constraintBottom_toTopOf="@id/aluminium"
+        android:layout_marginEnd="10sp"
+        app:layout_constraintEnd_toStartOf="@id/plastik"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/textView29"
+        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+    <ImageButton
+        android:id="@+id/plastik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:src="@drawable/plastik"
+        android:layout_marginTop="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/besi"
+        app:layout_constraintEnd_toEndOf="@+id/textView29"
+        app:layout_constraintStart_toEndOf="@+id/kertas"
+        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+    <ImageButton
+        android:id="@+id/aluminium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:background="@color/white"
+        android:src="@drawable/aluminium"
+        app:layout_constraintEnd_toEndOf="@+id/kertas"
+        app:layout_constraintStart_toStartOf="@+id/kertas"
+        app:layout_constraintTop_toBottomOf="@+id/kertas" />
+
+    <ImageButton
+        android:id="@+id/besi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:src="@drawable/besi"
+        android:layout_marginTop="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/aluminium"
+        app:layout_constraintEnd_toEndOf="@+id/plastik"
+        app:layout_constraintStart_toStartOf="@+id/plastik"
+        app:layout_constraintTop_toBottomOf="@+id/plastik" />
+
+    <ImageButton
+        android:id="@+id/botol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:src="@drawable/botol_kaca"
+        app:layout_constraintEnd_toEndOf="@+id/aluminium"
+        android:layout_marginTop="20sp"
+        app:layout_constraintStart_toStartOf="@+id/aluminium"
+        app:layout_constraintTop_toBottomOf="@+id/aluminium" />
+
+    <ImageButton
+        android:id="@+id/elektronik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:background="@color/white"
+        android:src="@drawable/elektronik"
+        app:layout_constraintEnd_toEndOf="@+id/besi"
+        app:layout_constraintStart_toStartOf="@+id/besi"
+        app:layout_constraintTop_toBottomOf="@+id/besi"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rectangle_bawah"
+        android:src="@drawable/recbawah"
+        app:layout_constraintTop_toBottomOf="@id/botol"
+        app:layout_constraintStart_toStartOf="@id/botol"
+        app:layout_constraintEnd_toEndOf="@id/elektronik"
+        android:layout_marginTop="60sp">
+
+    </ImageView>
+
+    <TextView
+        android:id="@id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="25sp"
+        android:text="Total    kg"
+        android:textColor="@color/warna"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_bawah"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_bawah"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_bawah">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kertas, Plastik"
+        android:id="@+id/item"
+        android:layout_marginBottom="10sp"
+        android:textColor="@color/warna"
+        app:layout_constraintTop_toBottomOf="@id/total"
+        app:layout_constraintStart_toStartOf="@+id/total"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_bawah">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kg"
+        android:text="5"
+        app:layout_constraintTop_toTopOf="@id/total"
+        app:layout_constraintStart_toStartOf="@id/total"
+        app:layout_constraintEnd_toEndOf="@id/total"
+        android:layout_marginStart="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/total"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+        android:layout_marginTop="5sp">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/rectangle_bawah"
+        app:layout_constraintBottom_toBottomOf="@id/rectangle_bawah"
+        android:text="Lanjut"
+        app:layout_constraintTop_toTopOf="@id/rectangle_bawah"
+        android:layout_marginEnd="20sp"
+        android:textColor="@color/warna"
+        android:fontFamily="@font/poppins"
+        android:layout_marginTop="3sp">
+
+    </TextView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
