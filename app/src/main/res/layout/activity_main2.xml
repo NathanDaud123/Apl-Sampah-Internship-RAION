@@ -28,7 +28,7 @@
         android:layout_width="295dp"
         android:layout_height="105dp"
         android:layout_marginTop="16dp"
-        android:fontFamily="@font/rubik_bold"
+        android:fontFamily="@font/rubik"
         android:text="Kamu bisa mengumpulkan sampah yang ada di lingkungan sekitarmu untuk dijual."
         android:textAlignment="center"
         android:textColor="@color/DarkGrey"

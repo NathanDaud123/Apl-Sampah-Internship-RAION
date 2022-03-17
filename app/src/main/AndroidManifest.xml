@@ -20,6 +20,12 @@
             android:name=".Komunitas1Activity"
             android:exported="false"
             android:label="@string/title_activity_komunitas1" />
+<!--        <activity-->
+<!--            android:name=".MovementDetail"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".ProfilePage"-->
+<!--            android:exported="false" />-->
         <activity
             android:name=".KomunitasPage"
             android:exported="false" />

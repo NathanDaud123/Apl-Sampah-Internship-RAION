@@ -7,14 +7,16 @@
     android:layout_height="wrap_content"
     android:background="@color/kremHalus"
     android:backgroundTint="@color/kremHalus"
-    android:foregroundTint="@color/kremHalus">
+    android:foregroundTint="@color/kremHalus"
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/kremHalus"
         android:scrollbarSize="4dp"
-        tools:context=".RegistrationPage">
+        tools:context=".RegistrationPage"
+        >
 
         <TextView
             android:id="@+id/textView"
@@ -227,10 +229,13 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="16dp"
-            android:text="Sudah punya akun ?                  di sini"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Sudah punya akun ?               di sini"
+            android:textColor="#1D1D1F"
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView18"
             app:layout_constraintVertical_bias="1.0" />
@@ -239,14 +244,14 @@
             android:id="@+id/MasukButtonpage4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins"
+            android:fontFamily="@font/poppins_medium"
             android:text="Masuk"
             android:textColor="@color/PrimaryGreen"
             android:textSize="12sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/textView7"
             app:layout_constraintEnd_toEndOf="@+id/textView7"
-            app:layout_constraintHorizontal_bias="0.736"
+            app:layout_constraintHorizontal_bias="0.773"
             app:layout_constraintStart_toStartOf="@+id/textView7"
             app:layout_constraintTop_toTopOf="@+id/textView7"
             app:layout_constraintVertical_bias="0.0" />
@@ -258,7 +263,7 @@
             android:backgroundTint="@color/white"
             android:ems="10"
             android:fontFamily="@font/poppins_medium"
-            android:hint="Type something here..."
+            android:hint="Bagas21"
             android:inputType="textPersonName"
             android:textColor="@color/MediumGrey"
             android:textSize="16sp"
@@ -276,7 +281,7 @@
             android:backgroundTint="@color/white"
             android:ems="10"
             android:fontFamily="@font/poppins_medium"
-            android:hint="Type something here..."
+            android:hint="Anda Bagas Aprianto"
             android:inputType="textPersonName"
             android:textColor="@color/MediumGrey"
             android:textSize="16sp"
@@ -294,7 +299,7 @@
             android:backgroundTint="@color/white"
             android:ems="10"
             android:fontFamily="@font/poppins_medium"
-            android:hint="Type something here..."
+            android:hint="089012345678"
             android:inputType="textPersonName"
             android:textColor="@color/MediumGrey"
             android:textSize="16sp"
@@ -312,7 +317,7 @@
             android:backgroundTint="@color/white"
             android:ems="10"
             android:fontFamily="@font/poppins_medium"
-            android:hint="Type something here..."
+            android:hint="bagasbagas@gmail.com"
             android:inputType="textPersonName"
             android:textColor="@color/MediumGrey"
             android:textSize="16sp"
@@ -324,7 +329,7 @@
             app:layout_constraintVertical_bias="1.0" />
 
         <ImageView
-            android:id="@+id/imageView46"
+            android:id="@+id/checkboxSyarat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -350,13 +355,13 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView45" />
 
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/kataSandi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#FAFAFC"
             android:ems="10"
             android:fontFamily="@font/poppins_medium"
-            android:hint="Type something here..."
+            android:hint="***********"
             android:inputType="textPassword"
             android:textColor="@color/MediumGrey"
             android:textSize="16sp"
@@ -365,16 +370,17 @@
             app:layout_constraintHorizontal_bias="0.253"
             app:layout_constraintStart_toStartOf="@+id/imageView14"
             app:layout_constraintTop_toTopOf="@+id/imageView14"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintVertical_bias="1.0"
+            />
 
         <EditText
-            android:id="@+id/editTextTextPassword2"
+            android:id="@+id/kataSandi2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#FAFAFC"
             android:ems="10"
             android:fontFamily="@font/poppins_medium"
-            android:hint="Type something here..."
+            android:hint="***********"
             android:inputType="textPassword"
             android:textColor="@color/MediumGrey"
             android:textSize="16sp"
@@ -384,6 +390,44 @@
             app:layout_constraintStart_toStartOf="@+id/imageView45"
             app:layout_constraintTop_toTopOf="@+id/imageView45"
             app:layout_constraintVertical_bias="0.6" />
+
+        <ImageView
+            android:id="@+id/hiderKataSandi"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView14"
+            app:layout_constraintTop_toTopOf="@+id/imageView14"
+            app:srcCompat="@drawable/buka" />
+
+        <ImageButton
+            android:id="@+id/showPasswordButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FAFAFC"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+            app:layout_constraintEnd_toEndOf="@+id/imageView14"
+            app:layout_constraintHorizontal_bias="0.97"
+            app:layout_constraintStart_toStartOf="@+id/imageView14"
+            app:layout_constraintTop_toTopOf="@+id/imageView14"
+            app:layout_constraintVertical_bias="0.705"
+            app:srcCompat="@drawable/eye"
+            app:tint="@color/black" />
+
+        <ImageButton
+            android:id="@+id/showPasswordButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FAFAFC"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView45"
+            app:layout_constraintEnd_toEndOf="@+id/imageView45"
+            app:layout_constraintHorizontal_bias="0.973"
+            app:layout_constraintStart_toStartOf="@+id/imageView45"
+            app:layout_constraintTop_toTopOf="@+id/imageView45"
+            app:layout_constraintVertical_bias="0.705"
+            app:srcCompat="@drawable/eye"
+            app:tint="@color/black" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
