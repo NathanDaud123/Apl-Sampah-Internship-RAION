@@ -1,22 +1,18 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context="user.example.sampah.ScrollingActivity">
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/home"
-        android:title="Home"
+        android:title="@string/home"
         android:icon="@drawable/home"/>
     <item
         android:id="@+id/Aktivitas"
-        android:title="Aktivitas"
+        android:title="@string/aktivitas"
         android:icon="@drawable/aktivitas"/>
     <item
         android:id="@+id/Komunitas"
-        android:title="Komunitas"
+        android:title="@string/komunitas"
         android:icon="@drawable/komunitas"/>
     <item
         android:id="@+id/Profile"
-        android:title="Profile"
+        android:title="@string/profile"
         android:icon="@drawable/prov"/>
-
 </menu>

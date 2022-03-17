@@ -16,16 +16,23 @@
         <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/layout/activity_aktivitas_page.xml" value="0.6" />
         <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/layout/activity_contoh.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/layout/activity_home_page.xml" value="0.264" />
-        <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/layout/activity_komunitas_page.xml" value="0.176" />
+        <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/layout/activity_informasi_detail.xml" value="0.264" />
+        <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/layout/activity_komunitas1.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/layout/activity_komunitas_page.xml" value="0.264" />
         <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/layout/activity_main.xml" value="0.176" />
         <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/layout/activity_main2.xml" value="0.264" />
         <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/layout/activity_main3.xml" value="0.264" />
         <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/layout/activity_main4.xml" value="0.264" />
         <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/layout/activity_scrolling.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/layout/activity_test_komunitas.xml" value="0.4" />
         <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/layout/content_scrolling.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/layout/fragment_dashboard.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/layout/fragment_home.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/layout/fragment_profile.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/layout/list_image.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/menu/bottom_nav_menu.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/menu/menu_navbawah.xml" value="0.20261713803292528" />
-        <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/menu/menu_scrolling.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/menu/menu_scrolling.xml" value="0.16" />
       </map>
     </option>
   </component>

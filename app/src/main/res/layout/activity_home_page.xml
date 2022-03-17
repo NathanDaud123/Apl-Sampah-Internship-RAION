@@ -709,7 +709,6 @@
 
         </HorizontalScrollView>
 
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
@@ -721,6 +720,8 @@
         android:layout_height="wrap_content"
         android:background="@drawable/navl"
         app:itemBackground="@color/white"
+        android:layout_gravity="bottom"
+        android:foregroundGravity="bottom"
         app:itemIconTint="@color/white"
         app:itemTextColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
