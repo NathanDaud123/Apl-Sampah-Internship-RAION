@@ -20,11 +20,6 @@ class LoginPage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main3)
 
-        var backButton = findViewById<ImageButton>(R.id.back_button)
-        backButton.setOnClickListener {
-            var pindah = Intent(this@LoginPage, WelcomingPage::class.java)
-            startActivity(pindah)
-        }
         password = findViewById(R.id.password)
         mataBuka = findViewById(R.id.mataBuka)
         mataBuka.setOnClickListener {

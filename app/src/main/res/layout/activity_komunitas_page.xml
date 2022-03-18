@@ -129,6 +129,7 @@
             tools:visibility="visible">
 
             <ImageView
+
                 android:id="@+id/prof1"
                 android:layout_width="56dp"
                 android:layout_height="49dp"
@@ -138,6 +139,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="ContentDescription,NotSibling" />
+
 
             <TextView
                 android:id="@+id/nama1"
@@ -149,6 +151,7 @@
                 app:layout_constraintStart_toEndOf="@+id/prof1"
                 app:layout_constraintTop_toTopOf="@+id/prof1"
                 tools:ignore="NotSibling" />
+
 
 
             <TextView
