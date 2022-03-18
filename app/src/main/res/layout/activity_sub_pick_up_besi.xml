@@ -15,6 +15,7 @@
         android:fontFamily="@font/poppins"
         android:layout_marginTop="50sp"
         android:textColor="@color/warna"
+        app:layout_constraintBottom_toTopOf="@id/image_plastik"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
