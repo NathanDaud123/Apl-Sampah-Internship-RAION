@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
         <activity
+            android:name=".DetailHariIni"
+            android:exported="false" />
+        <activity
+            android:name=".SubPickUpElektronik"
+            android:exported="false" />
+        <activity
+            android:name=".SubPickUpBesi"
+            android:exported="false" />
+        <activity
+            android:name=".SubPickUpPlastik"
+            android:exported="false" />
+        <activity
             android:name=".PickUp"
             android:exported="false" />
         <activity
@@ -26,20 +38,9 @@
         <activity
             android:name=".InformasiDetail"
             android:exported="false" />
-<!--        <activity-->
-<!--            android:name=".TestKomunitas"-->
-<!--            android:exported="false"-->
-<!--            android:label="@string/title_activity_test_komunitas" />-->
-<!--        <activity-->
-<!--            android:name=".Komunitas1Activity"-->
-<!--            android:exported="false"-->
-<!--            android:label="@string/title_activity_komunitas1" />-->
-<!--        <activity-->
-<!--            android:name=".MovementDetail"-->
-<!--            android:exported="false" />-->
-        <activity
-            android:name=".ProfilePage"
-            android:exported="false" />
+         <activity
+         android:name=".ProfilePage"
+         android:exported="false" />
         <activity
             android:name=".KomunitasPage"
             android:exported="false" />

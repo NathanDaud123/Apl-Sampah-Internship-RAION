@@ -115,5 +115,6 @@
     <string name="oleh_rivandi_pranandita_putra">Oleh Rivandi Pranandita Putra</string>
     <string name="paragraf1info">Hingga sekarang, Indonesia tampaknya masih menghadapi tantangan besar dalam hal pengelolaan sampah. Kalau kamu memperhatikan lingkungan sekitarmu, volume sampah yang dihasilkan semakin hari semakin banyak. Sialnya lagi, sebagian besar sampah yang dihasilkan merupakan sampah anorganik yang gak mudah terurai seperti plastik dan kaca.</string>
     <string name="title_activity_pick_up">PickUp</string>
+    <string name="estimasi_harga">Estimasi Harga</string>
 
 </resources>
