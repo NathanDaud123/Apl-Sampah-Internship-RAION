@@ -28,11 +28,22 @@
             android:name=".PickUp"
             android:exported="false" />
         <activity
-            android:name=".InformasiDetail"
-            android:exported="false" />
-        <activity
             android:name=".ProfilePage"
             android:exported="false" />
+        <activity
+            android:name=".PickUpKatKertas"
+            android:exported="false" />
+        <activity
+            android:name=".MovementDetail"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".InformasiDetail"
+            android:exported="false" />
+         <activity
+         android:name=".ProfilePage"
+         android:exported="false" />
         <activity
             android:name=".KomunitasPage"
             android:exported="false" />
