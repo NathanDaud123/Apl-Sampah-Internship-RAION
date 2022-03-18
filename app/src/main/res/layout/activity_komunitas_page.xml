@@ -115,7 +115,7 @@
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginTop="25sp"
         android:layout_marginBottom="15sp"
         app:layout_constraintBottom_toTopOf="@+id/palingBawah"
@@ -124,7 +124,6 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100sp"
             android:visibility="visible"
             tools:context=".KomunitasPage"
             tools:visibility="visible">
@@ -479,7 +478,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/navl"
-        app:itemBackground="@color/white"
         app:itemIconTint="@color/white"
         app:itemTextColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
