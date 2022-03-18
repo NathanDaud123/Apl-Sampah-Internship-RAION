@@ -347,12 +347,12 @@
                 android:layout_width="17dp"
                 android:layout_height="5dp"
                 android:layout_marginStart="8dp"
-                android:tint="@color/NeutralWhite"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView22"
                 app:layout_constraintStart_toStartOf="@+id/imageView22"
                 app:layout_constraintTop_toTopOf="@+id/imageView22"
                 app:layout_constraintVertical_bias="0.483"
-                app:srcCompat="@android:drawable/bottom_bar" />
+                app:srcCompat="@android:drawable/bottom_bar"
+                app:tint="@color/NeutralWhite" />
 
             <ImageButton
                 android:id="@+id/imageButton6"
@@ -361,12 +361,12 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="14dp"
-                android:tint="@color/NeutralWhite"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView53"
                 app:layout_constraintStart_toStartOf="@+id/imageView22"
                 app:layout_constraintTop_toTopOf="@+id/imageView53"
                 app:layout_constraintVertical_bias="0.914"
-                app:srcCompat="@android:drawable/bottom_bar" />
+                app:srcCompat="@android:drawable/bottom_bar"
+                app:tint="@color/NeutralWhite" />
 
             <ImageButton
                 android:id="@+id/imageButton7"
@@ -374,12 +374,12 @@
                 android:layout_height="5dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginBottom="13dp"
-                android:tint="@color/NeutralWhite"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView57"
                 app:layout_constraintStart_toStartOf="@+id/imageView57"
                 app:layout_constraintTop_toTopOf="@+id/imageView57"
                 app:layout_constraintVertical_bias="0.868"
-                app:srcCompat="@android:drawable/bottom_bar" />
+                app:srcCompat="@android:drawable/bottom_bar"
+                app:tint="@color/NeutralWhite" />
 
             <ImageButton
                 android:id="@+id/imageButton8"
@@ -387,12 +387,12 @@
                 android:layout_height="5dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginBottom="13dp"
-                android:tint="@color/NeutralWhite"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView59"
                 app:layout_constraintStart_toStartOf="@+id/imageView59"
                 app:layout_constraintTop_toTopOf="@+id/imageView59"
                 app:layout_constraintVertical_bias="0.868"
-                app:srcCompat="@android:drawable/bottom_bar" />
+                app:srcCompat="@android:drawable/bottom_bar"
+                app:tint="@color/NeutralWhite" />
 
             <ImageButton
                 android:id="@+id/imageButton9"
@@ -400,12 +400,12 @@
                 android:layout_height="5dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginBottom="13dp"
-                android:tint="@color/NeutralWhite"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView61"
                 app:layout_constraintStart_toStartOf="@+id/imageView61"
                 app:layout_constraintTop_toTopOf="@+id/imageView66"
                 app:layout_constraintVertical_bias="0.756"
-                app:srcCompat="@android:drawable/bottom_bar" />
+                app:srcCompat="@android:drawable/bottom_bar"
+                app:tint="@color/NeutralWhite" />
 
             <TextView
                 android:id="@+id/textView49"
@@ -691,10 +691,10 @@
         android:text="Lanjut"
         android:textColor="#FFFFFF"
         android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton2"
-        app:layout_constraintStart_toStartOf="@+id/imageButton2"
-        app:layout_constraintTop_toTopOf="@+id/imageButton2" />
+        app:layout_constraintBottom_toBottomOf="@+id/PickKertasLanjutButton"
+        app:layout_constraintEnd_toEndOf="@+id/PickKertasLanjutButton"
+        app:layout_constraintStart_toStartOf="@+id/PickKertasLanjutButton"
+        app:layout_constraintTop_toTopOf="@+id/PickKertasLanjutButton" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

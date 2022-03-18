@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InformasiDetail">
+
+    <ScrollView
+        android:id="@+id/scrollbg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/bg"
+                android:layout_width="471dp"
+                android:layout_height="274dp"
+                android:cropToPadding="true"
+                android:src="@drawable/background_info"
+                app:flow_verticalAlign="center"
+                app:layout_constraintBottom_toBottomOf="@id/scrollbg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.003"
+                tools:ignore="NotSibling" />
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30sp"
+                app:layout_constraintBottom_toTopOf="@id/manfaatdaurulang"
+                app:layout_constraintEnd_toStartOf="@+id/manfaatdaurulang"
+                android:layout_marginTop="15sp"
+                android:src="@drawable/back"
+                app:layout_constraintStart_toStartOf="@+id/bg"
+                app:layout_constraintTop_toTopOf="@id/bg">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/gambar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gambarinfo"
+                app:layout_constraintBottom_toTopOf="@id/text_info1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="200sp">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/manfaatdaurulang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:layout_marginTop="10sp"
+                android:text="@string/manfaat_daur_ulang"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@id/oleh"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/back">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/oleh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/oleh_rivandi_pranandita_putra"
+                android:textColor="#CDCECF"
+                android:layout_marginTop="10sp"
+                app:layout_constraintBottom_toTopOf="@id/gambar1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/manfaatdaurulang" />
+
+            <TextView
+                android:id="@+id/text_info1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:justificationMode="inter_word"
+                android:paddingStart="25sp"
+                android:paddingEnd="30sp"
+                android:text="     Hingga sekarang, Indonesia tampaknya masih menghadapi tantangan besar dalam hal pengelolaan sampah. Kalau kamu memperhatikan lingkungan sekitarmu, volume sampah yang dihasilkan semakin hari semakin banyak. Sialnya lagi, sebagian besar sampah yang dihasilkan merupakan sampah anorganik yang gak mudah terurai seperti plastik dan kaca."
+                android:textSize="17sp"
+                app:layout_constraintBottom_toBottomOf="@id/text_info2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/gambar1"
+                tools:ignore="NotSibling" />
+            <TextView
+                android:id="@+id/text_info2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:paddingEnd="30sp"
+                android:paddingStart="30sp"
+                app:layout_constraintBottom_toTopOf="@id/text_info3"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textSize="17sp"
+                android:text="      Salah satu solusi yang bisa kita lakukan untuk mengurangi volume sampah adalah daur ulang (recycle). Daur ulang merupakan salah satu cara untuk memodifikasi sampah atau barang bekas menjadi barang baru yang bermanfaat dan bernilai ekonomi. Ada banyak jenis sampah bisa kamu daur ulang, seperti plastik bekas, botol bekas, kertas bekas dan masih banyak lagi."
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_info1"
+                android:justificationMode="inter_word"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/text_info3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:paddingEnd="30sp"
+                android:paddingStart="30sp"
+                app:layout_constraintBottom_toTopOf="@id/no1"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="      Berikut ini 5 manfaat yang didapatkan jika kamu mau melakukan daur ulang sampah barang bekas."
+                app:layout_constraintStart_toStartOf="parent"
+                android:textSize="17sp"
+                app:layout_constraintTop_toBottomOf="@id/text_info2"
+                android:justificationMode="inter_word"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/no1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="30sp"
+                android:paddingStart="30sp"
+                android:text="1. Mengurangi pencemaran akibat sampah, menghemat energi, dan menjaga sumber daya alam."
+                app:layout_constraintBottom_toTopOf="@id/no2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textSize="17sp"
+                app:layout_constraintTop_toBottomOf="@id/no2"
+                android:justificationMode="inter_word"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/no2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="30sp"
+                android:paddingStart="30sp"
+                android:text="2. Mencegah timbulnya penyakit di sekitar kita"
+                app:layout_constraintBottom_toTopOf="@id/no3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textSize="17sp"
+                app:layout_constraintTop_toBottomOf="@id/no1"
+                android:justificationMode="inter_word"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/no3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="30sp"
+                android:paddingStart="30sp"
+                android:text="3. Menambah pengetahuian dan mengasah kreativitas"
+                app:layout_constraintBottom_toTopOf="@id/no4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textSize="17sp"
+                app:layout_constraintTop_toBottomOf="@id/no2"
+                android:justificationMode="inter_word"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/no4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingStart="37sp"
+                android:paddingEnd="30sp"
+                android:text="4. Menghemat pengeluaran"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toTopOf="@id/no5"
+                app:layout_constraintEnd_toEndOf="@+id/no5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/no3"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/no5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="30sp"
+                android:paddingStart="22sp"
+                android:text="5. Menambah penghasilan"
+                app:layout_constraintBottom_toBottomOf="@id/scrollbg"
+                app:layout_constraintEnd_toEndOf="@id/no4"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textSize="17sp"
+                app:layout_constraintTop_toBottomOf="@id/no4"
+                android:justificationMode="inter_word"
+                android:paddingBottom="40sp"
+                tools:ignore="NotSibling" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
