@@ -39,16 +39,16 @@
 
     <TextView
         android:id="@+id/desk_awal"
-        android:layout_width="345dp"
-        android:layout_height="wrap_content"
-        android:lineSpacingExtra="5sp"
+        android:layout_width="319dp"
+        android:layout_height="51dp"
         android:layout_marginTop="30dp"
+        android:lineSpacingExtra="5sp"
         android:text="Jika menggunakan layanan Pick Up, kolektor kami akan menjemput sampah kamu."
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/black"
         android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@id/back"
-        android:textColor="@color/black"
         app:layout_constraintTop_toBottomOf="@id/back" />
 
     <TextView
@@ -67,96 +67,123 @@
 
     <TextView
         android:id="@+id/textView29"
-        android:layout_width="345dp"
-        android:layout_height="wrap_content"
+        android:layout_width="319dp"
+        android:layout_height="54dp"
         android:lineSpacingExtra="5sp"
         android:text="Pilih kategori sampah yang ingin kamu jual untuk mengetahui TrashShelter terdekat."
         android:textColor="@color/black"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="@id/desk_awal"
-        app:layout_constraintStart_toStartOf="@id/kategori"
+        app:layout_constraintStart_toStartOf="@+id/kategori"
         app:layout_constraintTop_toBottomOf="@id/kategori">
 
     </TextView>
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="0dp"
+        android:id="@+id/scroll"
         android:paddingBottom="15sp"
-        app:layout_constraintBottom_toTopOf="@id/rectangle_bawah"
-        app:layout_constraintTop_toBottomOf="@id/textView29"
-        android:layout_marginTop="20sp">
+        app:layout_constraintBottom_toTopOf="@+id/cons_bawah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView29">
 
-    <ImageButton
-        android:id="@+id/kertas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/kertas"
-        app:layout_constraintBottom_toTopOf="@id/aluminium"
-        android:layout_marginEnd="10sp"
-        app:layout_constraintEnd_toStartOf="@id/plastik"
-        android:background="@color/white"
-        app:layout_constraintStart_toStartOf="@+id/textView29"
-        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cons_tengah">
 
-    <ImageButton
-        android:id="@+id/plastik"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:src="@drawable/plastik"
-        app:layout_constraintBottom_toTopOf="@+id/besi"
-        app:layout_constraintEnd_toEndOf="@+id/textView29"
-        app:layout_constraintStart_toEndOf="@+id/kertas"
-        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+            <ImageButton
+                android:id="@+id/kertas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30sp"
+                android:layout_marginEnd="10sp"
+                android:background="@android:color/transparent"
+                android:paddingTop="20sp"
+                android:src="@drawable/kertas"
+                app:layout_constraintBottom_toTopOf="@id/aluminium"
+                app:layout_constraintEnd_toStartOf="@id/plastik"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/scroll"
+                tools:ignore="NotSibling" />
 
-    <ImageButton
-        android:id="@+id/aluminium"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/botol"
-        android:background="@color/white"
-        android:src="@drawable/aluminium"
-        app:layout_constraintEnd_toEndOf="@+id/kertas"
-        app:layout_constraintStart_toStartOf="@+id/kertas"
-        app:layout_constraintTop_toBottomOf="@+id/kertas" />
+            <ImageButton
+                android:id="@+id/plastik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20sp"
+                android:background="@android:color/transparent"
+                android:paddingTop="20sp"
+                android:src="@drawable/plastik"
+                app:layout_constraintBottom_toBottomOf="@+id/kertas"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/kertas"
+                app:layout_constraintTop_toBottomOf="@+id/scroll"
+                tools:ignore="NotSibling" />
 
-    <ImageButton
-        android:id="@+id/besi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:src="@drawable/besi"
-        app:layout_constraintBottom_toTopOf="@id/elektronik"
-        app:layout_constraintEnd_toEndOf="@+id/plastik"
-        app:layout_constraintStart_toStartOf="@+id/plastik"
-        app:layout_constraintTop_toBottomOf="@+id/plastik" />
+        <ImageButton
+            android:id="@+id/aluminium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/aluminium"
+            android:paddingTop="20sp"
+            android:paddingBottom="20sp"
+            app:layout_constraintBottom_toTopOf="@id/botol"
+            app:layout_constraintEnd_toEndOf="@+id/kertas"
+            app:layout_constraintStart_toStartOf="@+id/kertas" />
 
-    <ImageButton
-        android:id="@+id/botol"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:src="@drawable/botol_kaca"
-        app:layout_constraintEnd_toEndOf="@+id/aluminium"
-        app:layout_constraintBottom_toTopOf="@id/rectangle_bawah"
-        app:layout_constraintStart_toStartOf="@+id/aluminium"
-        app:layout_constraintTop_toBottomOf="@+id/aluminium" />
+        <ImageButton
+            android:id="@+id/besi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/besi"
+            android:paddingTop="20sp"
+            app:layout_constraintBottom_toTopOf="@id/elektronik"
+            app:layout_constraintEnd_toEndOf="@+id/plastik"
+            app:layout_constraintStart_toStartOf="@+id/plastik"
+            app:layout_constraintTop_toBottomOf="@+id/plastik" />
 
-    <ImageButton
-        android:id="@+id/elektronik"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:src="@drawable/elektronik"
-        app:layout_constraintBottom_toTopOf="@+id/rectangle_bawah"
-        app:layout_constraintEnd_toEndOf="@+id/besi"
-        app:layout_constraintStart_toStartOf="@+id/besi"
-        app:layout_constraintTop_toBottomOf="@+id/besi" />
+        <ImageButton
+            android:id="@+id/botol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/botol_kaca"
+            app:layout_constraintBottom_toBottomOf="@id/scroll"
+            app:layout_constraintEnd_toEndOf="@+id/aluminium"
+            app:layout_constraintStart_toStartOf="@+id/aluminium"
+            app:layout_constraintTop_toBottomOf="@+id/aluminium"
+            tools:ignore="NotSibling" />
+
+        <ImageButton
+            android:id="@+id/elektronik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/elektronik"
+            android:paddingTop="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/scroll"
+            app:layout_constraintEnd_toEndOf="@+id/besi"
+            app:layout_constraintStart_toStartOf="@+id/besi"
+            app:layout_constraintTop_toBottomOf="@+id/besi"
+            tools:ignore="NotSibling" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cons_bawah"
+        app:layout_constraintTop_toBottomOf="@id/scroll"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
     <ImageButton
         android:id="@+id/rectangle_bawah"
@@ -164,6 +191,8 @@
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
         android:src="@drawable/recbawah"
+        android:paddingBottom="20sp"
+        android:paddingTop="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -189,9 +218,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Kertas, Plastik"
+        android:text=""
         android:id="@+id/item"
-        android:layout_marginBottom="10sp"
+        android:layout_marginBottom="25sp"
         android:textColor="@color/warna"
         app:layout_constraintTop_toBottomOf="@id/total"
         app:layout_constraintStart_toStartOf="@+id/total"
@@ -229,6 +258,6 @@
 
     </TextView>
 
-
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

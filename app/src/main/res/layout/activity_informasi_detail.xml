@@ -33,7 +33,7 @@
                 app:layout_constraintVertical_bias="0.003"
                 tools:ignore="NotSibling" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/back"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -41,11 +41,12 @@
                 app:layout_constraintBottom_toTopOf="@id/manfaatdaurulang"
                 app:layout_constraintEnd_toStartOf="@+id/manfaatdaurulang"
                 android:layout_marginTop="15sp"
+                android:background="@android:color/transparent"
                 android:src="@drawable/back"
                 app:layout_constraintStart_toStartOf="@+id/bg"
                 app:layout_constraintTop_toTopOf="@id/bg">
 
-            </ImageView>
+            </ImageButton>
 
             <ImageView
                 android:id="@+id/gambar1"
