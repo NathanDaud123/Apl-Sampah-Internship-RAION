@@ -2,17 +2,19 @@ package user.example.sampah
 
 import android.content.Intent
 import android.graphics.Bitmap
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
-import androidx.appcompat.app.AppCompatActivity
+import user.example.sampah.DetailHariIni.Companion.CAMERA_REQUEST
 
-class DetailHariIni : AppCompatActivity() {
+class DetailAturJadwal : AppCompatActivity() {
     var imageView: ImageView? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_detail_hari_ini)
+        setContentView(R.layout.activity_detail_atur_jadwal)
 
         imageView = findViewById(R.id.rectangle_foto)
         val button = findViewById<ImageButton>(R.id.rectangle_foto)
@@ -27,9 +29,9 @@ class DetailHariIni : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val jadwal = findViewById<ImageButton>(R.id.but_atur_jadwal)
-        jadwal.setOnClickListener {
-            var intent = Intent(this,DetailAturJadwal::class.java)
+        val hari_ini = findViewById<ImageButton>(R.id.but_hari_ini)
+        hari_ini.setOnClickListener {
+            var intent = Intent(this,DetailHariIni::class.java)
             startActivity(intent)
         }
 

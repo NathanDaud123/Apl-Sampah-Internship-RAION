@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailHariIni">
-    
+    tools:context=".DetailAturJadwal">
+
     <TextView
         android:id="@+id/text_detail"
         android:layout_width="wrap_content"
@@ -18,9 +18,9 @@
         app:layout_constraintTop_toTopOf="parent"
         android:textSize="28sp"
         android:fontFamily="@font/poppins">
-        
+
     </TextView>
-    
+
     <ImageButton
         android:id="@+id/back"
         android:layout_width="wrap_content"
@@ -32,9 +32,9 @@
         android:src="@drawable/ic_back_hijau"
         android:layout_marginEnd="35sp"
         android:background="@android:color/transparent">
-        
+
     </ImageButton>
-    
+
     <TextView
         android:id="@+id/text_foto_sampah"
         android:layout_width="wrap_content"
@@ -47,7 +47,7 @@
         android:fontFamily="@font/poppins"
         android:textSize="22sp"
         android:textColor="@color/black">
-        
+
     </TextView>
 
     <ImageButton
@@ -55,8 +55,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_foto_sampah"
-        app:layout_constraintEnd_toEndOf="parent"
         android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginEnd="30sp"
         app:layout_constraintBottom_toTopOf="@id/text_informasi_penjemputan"
         app:layout_constraintStart_toStartOf="@id/text_foto_sampah"
@@ -83,7 +83,7 @@
         android:id="@+id/but_hari_ini"
         app:layout_constraintStart_toStartOf="@id/text_informasi_penjemputan"
         app:layout_constraintTop_toBottomOf="@id/text_informasi_penjemputan"
-        android:src="@drawable/ic_button_hari_ini"
+        android:src="@drawable/ic_button_hari_ini_putih"
         android:background="@android:color/transparent"
         android:layout_marginTop="10dp">
 
@@ -93,7 +93,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/but_atur_jadwal"
-        android:src="@drawable/ic_button_jadwal"
+        android:src="@drawable/ic_button_atur_jadwal_hijau"
         android:background="@android:color/transparent"
         app:layout_constraintTop_toBottomOf="@id/text_informasi_penjemputan"
         android:layout_marginTop="10sp"
@@ -121,17 +121,75 @@
             tools:ignore="NotSibling">
 
             <ImageView
+                android:id="@+id/rec_tanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15sp"
+                android:paddingTop="10sp"
+                android:src="@drawable/ic_rec_jam"
+                app:layout_constraintBottom_toTopOf="@id/rec_jam"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/scroll" />
+
+
+            <TextView
+                android:id="@+id/tanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15sp"
+                android:background="#FAFAFC"
+                android:text="Tanggal Penjemputan"
+                android:textColor="@color/warna"
+                app:layout_constraintBottom_toTopOf="@+id/text_tanggal_pasti"
+                app:layout_constraintEnd_toEndOf="@+id/rec_tanggal"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/rec_tanggal"
+                app:layout_constraintTop_toTopOf="@+id/rec_tanggal" />
+
+            <TextView
+                android:id="@+id/text_tanggal_pasti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 Maret 2022"
+                android:layout_marginTop="8sp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@id/rec_tanggal"
+                app:layout_constraintEnd_toEndOf="@id/rec_tanggal"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/tanggal"
+                app:layout_constraintTop_toTopOf="@id/rec_tanggal"
+                app:layout_constraintVertical_bias="0.426" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/arah_bawah"
+                android:src="@drawable/ic_arah_bawah"
+                android:background="@android:color/transparent"
+                android:paddingBottom="5sp"
+                app:layout_constraintEnd_toEndOf="@id/rec_tanggal"
+                app:layout_constraintTop_toTopOf="@id/rec_tanggal"
+                app:layout_constraintBottom_toBottomOf="@id/rec_tanggal">
+
+            </ImageButton>
+
+
+            <ImageView
                 android:id="@+id/rec_jam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="20dp"
                 android:paddingTop="10sp"
                 android:src="@drawable/ic_rec_jam"
                 app:layout_constraintBottom_toTopOf="@id/alamat"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.495"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@id/scroll">
+                app:layout_constraintTop_toBottomOf="@id/rec_tanggal">
 
             </ImageView>
 
@@ -140,14 +198,17 @@
                 android:id="@+id/waktu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Waktu Penjemputan"
-                android:background="#FAFAFC"
-                android:textColor="@color/warna"
                 android:layout_marginStart="15sp"
+                android:layout_marginBottom="7sp"
+                android:background="#FAFAFC"
+                android:text="Waktu Penjemputan"
+                android:textColor="@color/warna"
+                app:layout_constraintBottom_toTopOf="@+id/jam1"
                 app:layout_constraintEnd_toEndOf="@+id/rec_jam"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/rec_jam"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toBottomOf="@+id/rec_tanggal"
+                app:layout_constraintVertical_bias="0.578" />
 
             <ImageButton
                 android:layout_width="wrap_content"
@@ -238,10 +299,10 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/rec_detail_alamat"
                 android:src="@drawable/ic_rec_alamat"
-                android:paddingBottom="20sp"
                 app:layout_constraintTop_toBottomOf="@id/alamat"
                 app:layout_constraintStart_toStartOf="@id/alamat"
                 app:layout_constraintEnd_toEndOf="@id/alamat"
+                android:paddingBottom="10sp"
                 android:layout_marginTop="20sp">
 
             </ImageView>
@@ -260,11 +321,11 @@
 
             <EditText
                 android:id="@+id/alamat_detail"
-                android:layout_width="260dp"
+                android:layout_width="254dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15sp"
-                android:background="@android:color/transparent"
                 android:fontFamily="@font/poppins"
+                android:background="@android:color/transparent"
                 android:textColor="@color/black"
                 android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="@+id/rec_detail_alamat"
