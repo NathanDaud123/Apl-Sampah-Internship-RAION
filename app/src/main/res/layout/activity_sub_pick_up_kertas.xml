@@ -206,7 +206,7 @@
                 android:src="@drawable/ic_minus"
                 android:layout_marginStart="4sp"
                 app:layout_constraintStart_toStartOf="@id/berat1"
-                android:background="null"
+                android:background="@color/PrimaryGreen"
                 app:layout_constraintTop_toTopOf="@id/berat1"
                 app:layout_constraintEnd_toStartOf="@id/putih1"
                 app:layout_constraintBottom_toBottomOf="@id/berat1">
@@ -338,7 +338,7 @@
                 android:src="@drawable/ic_minus"
                 android:layout_marginStart="4sp"
                 app:layout_constraintStart_toStartOf="@id/berat2"
-                android:background="null"
+                android:background="@color/PrimaryGreen"
                 app:layout_constraintTop_toTopOf="@id/berat2"
                 app:layout_constraintEnd_toStartOf="@id/putih2"
                 app:layout_constraintBottom_toBottomOf="@id/berat2">
@@ -469,7 +469,7 @@
                 android:src="@drawable/ic_minus"
                 android:layout_marginStart="4sp"
                 app:layout_constraintStart_toStartOf="@id/berat3"
-                android:background="null"
+                android:background="@color/PrimaryGreen"
                 app:layout_constraintTop_toTopOf="@id/berat3"
                 app:layout_constraintEnd_toStartOf="@id/putih3"
                 app:layout_constraintBottom_toBottomOf="@id/berat3">
@@ -600,7 +600,7 @@
                 android:src="@drawable/ic_minus"
                 android:layout_marginStart="4sp"
                 app:layout_constraintStart_toStartOf="@id/berat4"
-                android:background="null"
+                android:background="@color/PrimaryGreen"
                 app:layout_constraintTop_toTopOf="@id/berat4"
                 app:layout_constraintEnd_toStartOf="@id/putih4"
                 app:layout_constraintBottom_toBottomOf="@id/berat4">
@@ -733,7 +733,7 @@
                 android:src="@drawable/ic_minus"
                 android:layout_marginStart="4sp"
                 app:layout_constraintStart_toStartOf="@id/berat5"
-                android:background="null"
+                android:background="@color/PrimaryGreen"
                 app:layout_constraintTop_toTopOf="@id/berat5"
                 app:layout_constraintEnd_toStartOf="@id/putih5"
                 app:layout_constraintBottom_toBottomOf="@id/berat5">
@@ -864,7 +864,7 @@
                 android:src="@drawable/ic_minus"
                 android:layout_marginStart="4sp"
                 app:layout_constraintStart_toStartOf="@id/berat6"
-                android:background="null"
+                android:background="@color/PrimaryGreen"
                 app:layout_constraintTop_toTopOf="@id/berat6"
                 app:layout_constraintEnd_toStartOf="@id/putih6"
                 app:layout_constraintBottom_toBottomOf="@id/berat6">

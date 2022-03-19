@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SubPickUpKaca">
+    tools:context=".SubDropOffAlumunium">
 
     <TextView
         android:id="@+id/kategori"
@@ -23,7 +23,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/unsplash_reba4pizyms"
+        android:src="@drawable/unsplash__8v_gdr24by"
         android:layout_marginTop="25sp"
         app:layout_constraintEnd_toStartOf="@id/text_estimasi"
         android:layout_marginStart="45sp"
@@ -51,7 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins"
-        android:text="Botol Kaca"
+        android:text="Alumunium"
         android:textColor="@color/black"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@id/text_estimasi"
@@ -145,7 +145,7 @@
                 android:layout_marginStart="15sp"
                 android:layout_marginTop="15sp"
                 android:fontFamily="@font/poppins"
-                android:text="Botol Sirup"
+                android:text="Alma Tebal"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="@id/item1"
@@ -169,7 +169,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10sp"
-                android:text="Rp 500/satuan"
+                android:text="Rp 10.000/Kg"
                 android:textColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="@id/item1"
                 app:layout_constraintStart_toStartOf="@id/estimasi1"
@@ -277,7 +277,7 @@
                 android:layout_marginStart="15sp"
                 android:layout_marginTop="15sp"
                 android:fontFamily="@font/poppins"
-                android:text="Botol Kecap"
+                android:text="Alma Tipis"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="@id/item2"
@@ -301,7 +301,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10sp"
-                android:text="Rp 500/satuan"
+                android:text="Rp 8.000/Kg"
                 android:textColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="@id/item2"
                 app:layout_constraintStart_toStartOf="@id/estimasi2"
@@ -408,7 +408,7 @@
                 android:layout_marginStart="15sp"
                 android:layout_marginTop="15sp"
                 android:fontFamily="@font/poppins"
-                android:text="Botol Saos"
+                android:text="Kaleng/Seng"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="@id/item3"
@@ -432,7 +432,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10sp"
-                android:text="Rp 500/satuan"
+                android:text="Rp 1.000/Kg"
                 android:textColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="@id/item3"
                 app:layout_constraintStart_toStartOf="@id/estimasi3"
@@ -539,7 +539,7 @@
                 android:layout_marginStart="15sp"
                 android:layout_marginTop="15sp"
                 android:fontFamily="@font/poppins"
-                android:text="Botol Miras Kecil"
+                android:text="Les"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="@id/item4"
@@ -563,7 +563,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10sp"
-                android:text="Rp 500/satuan"
+                android:text="Rp 10.000/Kg"
                 android:textColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="@id/item4"
                 app:layout_constraintStart_toStartOf="@id/estimasi4"
@@ -670,7 +670,7 @@
                 android:layout_marginStart="15sp"
                 android:layout_marginTop="15sp"
                 android:fontFamily="@font/poppins"
-                android:text="Botol Miras Besar"
+                android:text="Alumunium Lainnya"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="@id/item5"
@@ -694,7 +694,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10sp"
-                android:text="Rp 1.000/satuan"
+                android:text="Rp 3.000/Kg"
                 android:textColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="@id/item5"
                 app:layout_constraintStart_toStartOf="@id/estimasi5"
@@ -778,137 +778,6 @@
                 app:layout_constraintEnd_toEndOf="@id/putih5"
                 app:layout_constraintTop_toTopOf="@id/berat5"
                 app:layout_constraintBottom_toBottomOf="@id/berat5"
-                android:text="kg"
-                android:textColor="@color/black"
-                android:fontFamily="@font/poppins"
-                android:textSize="15sp"
-                android:layout_marginTop="4sp">
-
-            </TextView>
-
-            <ImageView
-                android:id="@+id/item6"
-                android:layout_marginTop="10sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_recluar_plastik"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/item5"/>
-
-            <TextView
-                android:id="@+id/item_name_6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15sp"
-                android:layout_marginTop="15sp"
-                android:fontFamily="@font/poppins"
-                android:text="Botol Kaca Lainnya"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                app:layout_constraintStart_toStartOf="@id/item6"
-                app:layout_constraintTop_toTopOf="@id/item6">
-
-            </TextView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/estimasi_harga"
-                android:id="@+id/estimasi6"
-                android:textColor="@color/black"
-                app:layout_constraintTop_toBottomOf="@id/item_name_6"
-                app:layout_constraintStart_toStartOf="@id/item_name_6">
-
-            </TextView>
-
-            <TextView
-                android:id="@+id/harga6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10sp"
-                android:text="Rp 500/satuan"
-                android:textColor="@color/black"
-                app:layout_constraintBottom_toBottomOf="@id/item6"
-                app:layout_constraintStart_toStartOf="@id/estimasi6"
-                app:layout_constraintTop_toBottomOf="@id/estimasi6"></TextView>
-
-            <ImageView
-                android:id="@+id/berat6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_rec_berat_hijau"
-                app:layout_constraintEnd_toEndOf="@id/item6"
-                app:layout_constraintTop_toTopOf="@id/item6"
-                app:layout_constraintBottom_toBottomOf="@id/item6"
-                android:layout_marginEnd="20sp">
-
-            </ImageView>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_persegi_putih"
-                app:layout_constraintTop_toTopOf="@+id/berat6"
-                app:layout_constraintStart_toStartOf="@id/berat6"
-                app:layout_constraintEnd_toEndOf="@id/berat6"
-                app:layout_constraintBottom_toBottomOf="@id/berat6"
-                android:id="@+id/putih6">
-
-            </ImageView>
-
-            <ImageButton
-                android:id="@+id/minus6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_minus"
-                android:layout_marginStart="4sp"
-                app:layout_constraintStart_toStartOf="@id/berat6"
-                android:background="@color/PrimaryGreen"
-                app:layout_constraintTop_toTopOf="@id/berat6"
-                app:layout_constraintEnd_toStartOf="@id/putih6"
-                app:layout_constraintBottom_toBottomOf="@id/berat6">
-
-            </ImageButton>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/plus6"
-                android:layout_marginEnd="4sp"
-                app:layout_constraintStart_toEndOf="@id/putih6"
-                app:layout_constraintTop_toTopOf="@id/berat6"
-                app:layout_constraintEnd_toEndOf="@id/berat6"
-                app:layout_constraintBottom_toBottomOf="@id/berat6"
-                android:src="@drawable/ic_plus">
-
-            </ImageView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/num6"
-                android:paddingStart="3sp"
-                app:layout_constraintStart_toStartOf="@id/putih6"
-                app:layout_constraintEnd_toStartOf="@id/kg6"
-                app:layout_constraintTop_toTopOf="@id/berat6"
-                app:layout_constraintBottom_toBottomOf="@id/berat6"
-                android:text="0"
-                android:textColor="@color/black"
-                android:fontFamily="@font/poppins"
-                android:textSize="15sp"
-                android:layout_marginTop="4sp">
-            </TextView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/kg6"
-                android:paddingEnd="3sp"
-                app:layout_constraintStart_toEndOf="@id/num6"
-                app:layout_constraintEnd_toEndOf="@id/putih6"
-                app:layout_constraintTop_toTopOf="@id/berat6"
-                app:layout_constraintBottom_toBottomOf="@id/berat6"
                 android:text="kg"
                 android:textColor="@color/black"
                 android:fontFamily="@font/poppins"

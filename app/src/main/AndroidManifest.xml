@@ -14,8 +14,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sampah">
         <activity
+            android:name=".SubDropOffKaca"
+            android:exported="false" />
+        <activity
+            android:name=".SubDropOffAlumunium"
+            android:exported="false" />
+        <activity
+            android:name=".SubDropOffKertas"
+            android:exported="false" />
+        <activity
             android:name=".DetailAturJadwal"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -48,7 +57,7 @@
             android:exported="false" />
         <activity
             android:name=".PickUp"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".ProfilePage"
             android:exported="false" />
