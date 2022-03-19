@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
         <activity
+            android:name=".SubPickUpKaca"
+            android:exported="false" />
+        <activity
+            android:name=".SubPickUpAlumunium"
+            android:exported="false" />
+        <activity
+            android:name=".SubPickUpKertas"
+            android:exported="false" />
+        <activity
+            android:name=".AktivitasPage2"
+            android:exported="false" />
+        <activity
             android:name=".DetailHariIni"
             android:exported="false" />
         <activity
@@ -33,14 +45,9 @@
         <activity
             android:name=".MovementDetail"
             android:exported="false" />
-
-
         <activity
             android:name=".InformasiDetail"
             android:exported="false" />
-         <activity
-         android:name=".ProfilePage"
-         android:exported="false" />
         <activity
             android:name=".KomunitasPage"
             android:exported="false" />
