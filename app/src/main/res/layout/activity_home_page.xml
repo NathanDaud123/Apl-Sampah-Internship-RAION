@@ -227,10 +227,11 @@
             app:layout_constraintVertical_bias="0.763"
             app:srcCompat="@drawable/profile" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/imageView30"
             android:layout_width="365dp"
             android:layout_height="155dp"
+            android:background="@android:color/transparent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -268,10 +269,11 @@
             android:layout_height="wrap_content"
             app:constraint_referenced_ids="imageView34" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/imageView35"
             android:layout_width="381dp"
             android:layout_height="144dp"
+            android:background="@android:color/transparent"
             app:layout_constraintBottom_toTopOf="@id/textView13"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.533"
@@ -332,11 +334,12 @@
                 android:layout_marginRight="15sp"
                 android:layout_height="wrap_content">
 
-        <ImageView
+        <ImageButton
             android:id="@+id/imageView27"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="25sp"
+            android:background="@android:color/transparent"
             app:layout_constraintHorizontal_bias="0.494"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/scrollKanan"
@@ -514,10 +517,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
-        <ImageView
+        <ImageButton
             android:id="@+id/grid1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
             android:layout_marginStart="25dp"
             android:layout_marginTop="5sp"
             android:src="@drawable/grid1"
@@ -530,6 +534,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="1dp"
             android:src="@drawable/grid2"
+            android:layout_marginStart="18sp"
             app:layout_constraintBottom_toBottomOf="@id/grid1"
             app:layout_constraintEnd_toEndOf="@+id/grid1"
             app:layout_constraintHorizontal_bias="0.409"
@@ -709,7 +714,6 @@
 
         </HorizontalScrollView>
 
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
@@ -725,8 +729,9 @@
         app:itemTextColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/menu_scrolling"/>
+        app:menu="@menu/menu_scrolling" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

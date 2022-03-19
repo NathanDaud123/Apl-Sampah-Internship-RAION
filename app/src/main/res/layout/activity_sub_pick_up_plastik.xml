@@ -207,16 +207,17 @@
                 android:src="@drawable/ic_minus"
                 android:layout_marginStart="4sp"
                 app:layout_constraintStart_toStartOf="@id/berat1"
-                android:background="null"
+                android:background="@android:color/transparent"
                 app:layout_constraintTop_toTopOf="@id/berat1"
                 app:layout_constraintEnd_toStartOf="@id/putih1"
                 app:layout_constraintBottom_toBottomOf="@id/berat1">
 
             </ImageButton>
 
-            <ImageView
+            <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
                 android:id="@+id/plus1"
                 android:layout_marginEnd="4sp"
                 app:layout_constraintStart_toEndOf="@id/putih1"
@@ -225,7 +226,7 @@
                 app:layout_constraintBottom_toBottomOf="@id/berat1"
                 android:src="@drawable/ic_plus">
 
-            </ImageView>
+            </ImageButton>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -340,25 +341,26 @@
                 android:src="@drawable/ic_minus"
                 android:layout_marginStart="4sp"
                 app:layout_constraintStart_toStartOf="@id/berat2"
-                android:background="null"
+                android:background="@android:color/transparent"
                 app:layout_constraintTop_toTopOf="@id/berat2"
                 app:layout_constraintEnd_toStartOf="@id/putih2"
                 app:layout_constraintBottom_toBottomOf="@id/berat2">
 
             </ImageButton>
 
-            <ImageView
+            <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/plus2"
                 android:layout_marginEnd="4sp"
+                android:background="@android:color/transparent"
                 app:layout_constraintStart_toEndOf="@id/putih2"
                 app:layout_constraintTop_toTopOf="@id/berat2"
                 app:layout_constraintEnd_toEndOf="@id/berat2"
                 app:layout_constraintBottom_toBottomOf="@id/berat2"
                 android:src="@drawable/ic_plus">
 
-            </ImageView>
+            </ImageButton>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -472,17 +474,18 @@
                 android:src="@drawable/ic_minus"
                 android:layout_marginStart="4sp"
                 app:layout_constraintStart_toStartOf="@id/berat3"
-                android:background="null"
+                android:background="@android:color/transparent"
                 app:layout_constraintTop_toTopOf="@id/berat3"
                 app:layout_constraintEnd_toStartOf="@id/putih3"
                 app:layout_constraintBottom_toBottomOf="@id/berat3">
 
             </ImageButton>
 
-            <ImageView
+            <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/plus3"
+                android:background="@android:color/transparent"
                 android:layout_marginEnd="4sp"
                 app:layout_constraintStart_toEndOf="@id/putih3"
                 app:layout_constraintTop_toTopOf="@id/berat3"
@@ -490,7 +493,7 @@
                 app:layout_constraintBottom_toBottomOf="@id/berat3"
                 android:src="@drawable/ic_plus">
 
-            </ImageView>
+            </ImageButton>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -604,17 +607,18 @@
                 android:src="@drawable/ic_minus"
                 android:layout_marginStart="4sp"
                 app:layout_constraintStart_toStartOf="@id/berat4"
-                android:background="null"
+                android:background="@android:color/transparent"
                 app:layout_constraintTop_toTopOf="@id/berat4"
                 app:layout_constraintEnd_toStartOf="@id/putih4"
                 app:layout_constraintBottom_toBottomOf="@id/berat4">
 
             </ImageButton>
 
-            <ImageView
+            <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/plus4"
+                android:background="@android:color/transparent"
                 android:layout_marginEnd="4sp"
                 app:layout_constraintStart_toEndOf="@id/putih4"
                 app:layout_constraintTop_toTopOf="@id/berat4"
@@ -622,7 +626,7 @@
                 app:layout_constraintBottom_toBottomOf="@id/berat4"
                 android:src="@drawable/ic_plus">
 
-            </ImageView>
+            </ImageButton>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -736,17 +740,18 @@
                 android:src="@drawable/ic_minus"
                 android:layout_marginStart="4sp"
                 app:layout_constraintStart_toStartOf="@id/berat5"
-                android:background="null"
+                android:background="@android:color/transparent"
                 app:layout_constraintTop_toTopOf="@id/berat5"
                 app:layout_constraintEnd_toStartOf="@id/putih5"
                 app:layout_constraintBottom_toBottomOf="@id/berat5">
 
             </ImageButton>
 
-            <ImageView
+            <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/plus5"
+                android:background="@android:color/transparent"
                 android:layout_marginEnd="4sp"
                 app:layout_constraintStart_toEndOf="@id/putih5"
                 app:layout_constraintTop_toTopOf="@id/berat5"
@@ -754,7 +759,7 @@
                 app:layout_constraintBottom_toBottomOf="@id/berat5"
                 android:src="@drawable/ic_plus">
 
-            </ImageView>
+            </ImageButton>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -868,17 +873,18 @@
                 android:src="@drawable/ic_minus"
                 android:layout_marginStart="4sp"
                 app:layout_constraintStart_toStartOf="@id/berat6"
-                android:background="null"
+                android:background="@android:color/transparent"
                 app:layout_constraintTop_toTopOf="@id/berat6"
                 app:layout_constraintEnd_toStartOf="@id/putih6"
                 app:layout_constraintBottom_toBottomOf="@id/berat6">
 
             </ImageButton>
 
-            <ImageView
+            <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/plus6"
+                android:background="@android:color/transparent"
                 android:layout_marginEnd="4sp"
                 app:layout_constraintStart_toEndOf="@id/putih6"
                 app:layout_constraintTop_toTopOf="@id/berat6"
@@ -886,7 +892,7 @@
                 app:layout_constraintBottom_toBottomOf="@id/berat6"
                 android:src="@drawable/ic_plus">
 
-            </ImageView>
+            </ImageButton>
 
             <TextView
                 android:layout_width="wrap_content"

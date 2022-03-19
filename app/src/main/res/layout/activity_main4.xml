@@ -7,8 +7,7 @@
     android:layout_height="wrap_content"
     android:background="@color/kremHalus"
     android:backgroundTint="@color/kremHalus"
-    android:foregroundTint="@color/kremHalus"
-    >
+    android:foregroundTint="@color/kremHalus">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
