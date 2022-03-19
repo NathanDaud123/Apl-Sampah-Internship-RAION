@@ -50,12 +50,13 @@
         
     </TextView>
 
-    <ImageView
+    <ImageButton
         android:id="@+id/rectangle_foto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_foto_sampah"
         app:layout_constraintEnd_toEndOf="parent"
+        android:background="@android:color/transparent"
         android:layout_marginEnd="30sp"
         app:layout_constraintBottom_toTopOf="@id/text_informasi_penjemputan"
         app:layout_constraintStart_toStartOf="@id/text_foto_sampah"
@@ -237,6 +238,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/rec_detail_alamat"
                 android:src="@drawable/ic_rec_alamat"
+                android:paddingBottom="20sp"
                 app:layout_constraintTop_toBottomOf="@id/alamat"
                 app:layout_constraintStart_toStartOf="@id/alamat"
                 app:layout_constraintEnd_toEndOf="@id/alamat"
@@ -256,20 +258,20 @@
                 app:layout_constraintStart_toStartOf="@id/rec_detail_alamat"
                 app:layout_constraintTop_toBottomOf="@+id/alamat" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <EditText
                 android:id="@+id/alamat_detail"
-                android:text="No 21, Rumah biru kedua dari ujung"
-                app:layout_constraintStart_toStartOf="@id/rec_detail_alamat"
-                app:layout_constraintTop_toTopOf="@id/rec_detail_alamat"
-                android:layout_marginStart="15sp"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="15sp"
-                android:textColor="@color/black"
+                android:background="@android:color/transparent"
                 android:fontFamily="@font/poppins"
-                android:textSize="12sp">
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/rec_detail_alamat"
+                app:layout_constraintStart_toStartOf="@id/rec_detail_alamat"
+                app:layout_constraintTop_toTopOf="@id/rec_detail_alamat">
 
-            </TextView>
+            </EditText>
 
 
 
@@ -285,17 +287,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <ImageView
+        <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/rec_lanjut"
+            android:background="@android:color/transparent"
             android:src="@drawable/ic_rec_lanjut"
             app:layout_constraintTop_toTopOf="@+id/cons_bawah"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent">
 
-        </ImageView>
+        </ImageButton>
 
         <TextView
             android:id="@+id/text_lanjut"

@@ -81,7 +81,7 @@ class PickUp : AppCompatActivity() {
 //        }
 
         lanjut.setOnClickListener{
-            val intent = Intent(this, PickUp::class.java)
+            val intent = Intent(this, DetailHariIni::class.java)
             startActivity(intent)
 
         }

@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="user.example.sampah">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application
@@ -12,14 +14,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sampah">
         <activity
-            android:name=".PickUpCamera"
-            android:exported="false" />
-        <activity
             android:name=".DetailAturJadwal"
-            android:exported="false" />
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".DetailHariIni"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".SubPickUpElektronik"
             android:exported="false" />
@@ -31,13 +36,7 @@
             android:exported="false" />
         <activity
             android:name=".PickUp"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true"/>
         <activity
             android:name=".ProfilePage"
             android:exported="false" />
@@ -66,7 +65,7 @@
         <activity android:name=".RegistrationPage" />
         <activity
             android:name=".SplashScreen"
-            android:exported="false"/>
+            android:exported="false" />
 
         <meta-data
             android:name="preloaded_fonts"
