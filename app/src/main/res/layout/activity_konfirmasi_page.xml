@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KonfirmasiPage">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/back_hijau"
+        app:layout_constraintBottom_toTopOf="@+id/daftar_item"
+        app:layout_constraintEnd_toStartOf="@+id/text_konfirmasi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="NotSibling">
+
+    </ImageButton>
+
+    <TextView
+        android:id="@+id/text_konfirmasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toTopOf="@id/scroll"
+        android:fontFamily="@font/poppins"
+        android:paddingBottom="20sp"
+        android:text="Konfirmasi"
+        android:textColor="@color/warna"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/scroll"
+        app:layout_constraintBottom_toTopOf="@id/cons_bawah"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_konfirmasi"
+        android:layout_marginTop="15sp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:id="@+id/cons_tengah"
+            android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/daftar_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_rectangle_lebar"
+        android:paddingBottom="10sp"
+        android:layout_marginBottom="25sp"
+        app:layout_constraintBottom_toTopOf="@id/hijau_daftar_bawah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/scroll"
+        tools:ignore="NotSibling">
+
+    </ImageView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/daftar_item"
+        app:layout_constraintEnd_toEndOf="@id/daftar_item"
+        app:layout_constraintTop_toTopOf="@id/daftar_item"
+        android:id="@+id/hijau_daftar"
+        android:src="@drawable/ic_rec_atas">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/text_informasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="Informasi Sampah"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/hijau_daftar"
+        app:layout_constraintEnd_toEndOf="@id/hijau_daftar"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="@id/hijau_daftar"
+        app:layout_constraintTop_toTopOf="@id/hijau_daftar"
+        app:layout_constraintVertical_bias="0.525" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kertas"
+        android:text="Kertas 3 Kg"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/daftar_item"
+        app:layout_constraintTop_toBottomOf="@id/hijau_daftar"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="20sp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/harga_kertas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:fontFamily="@font/poppins"
+        app:layout_constraintBottom_toTopOf="@id/harga_plastik"
+        android:text="Rp. 3.000"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/daftar_item"
+        app:layout_constraintHorizontal_bias="0.806"
+        app:layout_constraintStart_toEndOf="@id/kertas"
+        app:layout_constraintTop_toBottomOf="@id/hijau_daftar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/plastik"
+        android:text="Plastik 2 Kg"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/daftar_item"
+        app:layout_constraintTop_toBottomOf="@id/kertas"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+        android:layout_marginStart="20sp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/harga_plastik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="Rp. 4.000"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/daftar_item"
+        app:layout_constraintHorizontal_bias="0.806"
+        app:layout_constraintStart_toEndOf="@id/kertas"
+        app:layout_constraintTop_toBottomOf="@id/harga_kertas" />
+
+    <ImageView
+        android:id="@+id/gambar_kertas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:src="@drawable/gambar_koran"
+        app:layout_constraintBottom_toBottomOf="@+id/daftar_item"
+        app:layout_constraintStart_toStartOf="@id/plastik"
+        app:layout_constraintTop_toBottomOf="@id/plastik"
+        app:layout_constraintVertical_bias="0.0">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/gambar_plastik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:src="@drawable/gambar_plastik"
+        app:layout_constraintStart_toEndOf="@+id/gambar_kertas"
+        app:layout_constraintTop_toTopOf="@+id/gambar_kertas">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estimasi Penjualan"
+        android:id="@+id/penjualan"
+        app:layout_constraintBottom_toTopOf="@id/pendapatan"
+        app:layout_constraintStart_toStartOf="@id/gambar_kertas"
+        app:layout_constraintTop_toBottomOf="@id/gambar_kertas"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+        android:layout_marginTop="10sp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/pendapatan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="Estimasi Pendapatan"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/dipotong"
+        app:layout_constraintStart_toStartOf="@id/penjualan"
+        app:layout_constraintTop_toBottomOf="@id/penjualan">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dipotong"
+        android:layout_marginBottom="15sp"
+        android:text="Telah dipotong biaya pelayanan sebesar 5%"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/daftar_item"
+        app:layout_constraintStart_toStartOf="@id/pendapatan"
+        app:layout_constraintTop_toBottomOf="@id/pendapatan"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp 7.000"
+        android:id="@+id/harga_total"
+        app:layout_constraintBottom_toTopOf="@id/harga_dipotong"
+        app:layout_constraintEnd_toEndOf="@id/harga_plastik"
+        app:layout_constraintTop_toTopOf="@id/penjualan"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/harga_dipotong"
+        app:layout_constraintEnd_toEndOf="@id/harga_total"
+        app:layout_constraintTop_toTopOf="@id/pendapatan"
+        android:textColor="@color/black"
+        android:text="Rp 6.650"
+        android:fontFamily="@font/poppins">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/rec_info_jemput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15sp"
+        android:src="@drawable/ic_rectangle_lebar1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        android:paddingBottom="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/daftar_item"
+        app:layout_constraintVertical_bias="0.0">
+
+    </ImageView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/rec_info_jemput"
+        app:layout_constraintEnd_toEndOf="@id/rec_info_jemput"
+        app:layout_constraintTop_toTopOf="@id/rec_info_jemput"
+        android:id="@+id/hijau_daftar_bawah"
+        android:src="@drawable/ic_rec_atas">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_info_jemput"
+        app:layout_constraintStart_toStartOf="@id/text_informasi"
+        android:text="Informasi Penjemputan"
+        app:layout_constraintTop_toTopOf="@id/hijau_daftar_bawah"
+        app:layout_constraintBottom_toBottomOf="@id/hijau_daftar_bawah"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins"
+        android:textSize="18sp">
+
+    </TextView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_calendar"
+        android:id="@+id/calender"
+        app:layout_constraintStart_toStartOf="@id/pendapatan"
+        app:layout_constraintTop_toBottomOf="@id/hijau_daftar_bawah"
+        android:layout_marginTop="15sp">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tanggal"
+        android:text="10 Maret 2022"
+        app:layout_constraintStart_toEndOf="@id/calender"
+        app:layout_constraintTop_toTopOf="@id/calender"
+        android:layout_marginStart="15sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins">
+
+    </TextView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/line1"
+        android:src="@drawable/ic_line"
+        android:layout_marginTop="10sp"
+        app:layout_constraintTop_toBottomOf="@id/calender"
+        app:layout_constraintStart_toStartOf="@id/hijau_daftar_bawah"
+        app:layout_constraintEnd_toEndOf="@id/hijau_daftar_bawah">
+
+    </ImageView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/time"
+        android:src="@drawable/ic_time"
+        app:layout_constraintStart_toStartOf="@id/calender"
+        app:layout_constraintTop_toBottomOf="@id/line1"
+        android:layout_marginTop="10sp">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/waktu"
+        app:layout_constraintStart_toStartOf="@id/tanggal"
+        android:text="08.00 - 09.00 WIB"
+        app:layout_constraintTop_toTopOf="@id/time"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black">
+
+    </TextView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/line2"
+        app:layout_constraintTop_toBottomOf="@id/time"
+        app:layout_constraintStart_toStartOf="@id/hijau_daftar_bawah"
+        app:layout_constraintEnd_toEndOf="@id/hijau_daftar_bawah"
+        android:layout_marginTop="10sp"
+        android:src="@drawable/ic_line">
+
+    </ImageView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loc"
+        android:src="@drawable/ic_location"
+        app:layout_constraintStart_toStartOf="@id/time"
+        app:layout_constraintTop_toBottomOf="@id/line2"
+        android:layout_marginTop="10sp">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/alamat"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10sp"
+        android:text="Jl Banyuwangi, Kel Singa, Kec Laut, Kota Hewan, Prov Sungai Sana"
+        app:layout_constraintStart_toEndOf="@id/loc"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins"
+        app:layout_constraintTop_toTopOf="@id/loc" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alamat_detail"
+        app:layout_constraintStart_toStartOf="@id/alamat"
+        android:textSize="10sp"
+        android:text="No 21, Rumah biru kedua dari ujung "
+        app:layout_constraintTop_toBottomOf="@id/alamat">
+
+    </TextView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/line3"
+        android:src="@drawable/ic_line"
+        app:layout_constraintTop_toBottomOf="@id/alamat_detail"
+        app:layout_constraintStart_toStartOf="@id/hijau_daftar_bawah"
+        app:layout_constraintEnd_toEndOf="@id/hijau_daftar_bawah"
+        android:layout_marginTop="10sp">
+
+    </ImageView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/call"
+        android:src="@drawable/ic_call"
+        app:layout_constraintStart_toStartOf="@id/loc"
+        app:layout_constraintTop_toBottomOf="@id/line3"
+        android:layout_marginTop="10sp">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/noTelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="0896012345678"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/rec_info_jemput"
+        app:layout_constraintStart_toStartOf="@id/alamat_detail"
+        app:layout_constraintTop_toTopOf="@id/call"
+        app:layout_constraintVertical_bias="0.0">
+
+    </TextView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100sp"
+        app:layout_constraintTop_toBottomOf="@id/scroll"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/cons_bawah">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rec_lanjut"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_rec_lanjut"
+        app:layout_constraintTop_toTopOf="@+id/cons_bawah"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    </ImageButton>
+
+    <TextView
+        android:id="@+id/text_lanjut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lanjut"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/rec_lanjut"
+        app:layout_constraintStart_toStartOf="@id/rec_lanjut"
+        app:layout_constraintBottom_toBottomOf="@id/rec_lanjut"
+        app:layout_constraintTop_toTopOf="@id/rec_lanjut"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

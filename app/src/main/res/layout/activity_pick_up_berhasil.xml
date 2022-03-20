@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PickUpBerhasil">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rec_berhasil"
+        android:src="@drawable/ic_rec_bawah_berhasil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/orang_berhasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/orang_berhasil"
+        app:layout_constraintBottom_toTopOf="@id/rec_berhasil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/rec_berhasil"
+        android:id="@+id/lanjut_putih"
+        android:layout_marginBottom="10sp"
+        android:src="@drawable/ic_lanjut_putih"
+        android:background="@android:color/transparent">
+
+    </ImageButton>
+
+    <TextView
+        android:id="@+id/panjang"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Penjualan sampah kamu telah berhasil silahkan menunggu kolektor kami untuk menjemput sampah kamu dan poin akan langsung dikirim ke akun kamu"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/lanjut_putih"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingBottom="100sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pesanan_berhasil" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pesanan_berhasil"
+        android:text="PESANAN BERHASIL"
+        android:paddingTop="30sp"
+        app:layout_constraintTop_toTopOf="@id/rec_berhasil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/panjang"
+        android:layout_marginTop="20sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins"
+        android:textSize="25sp">
+
+    </TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

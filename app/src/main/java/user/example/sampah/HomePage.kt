@@ -1,16 +1,39 @@
 package user.example.sampah
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
+import android.view.View
 import android.widget.ImageButton
-import com.google.android.material.navigation.NavigationBarMenuView
+import androidx.annotation.Nullable
+import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class HomePage : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(@Nullable savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_page)
+        val bottomNavigationView =
+            findViewById<View>(R.id.palingBawah) as BottomNavigationView
+        val menu = bottomNavigationView.menu
+        val menuItem = menu.getItem(0)
+        menuItem.isChecked = true
+        bottomNavigationView.setOnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.aktivitas -> {
+                    val intent1 = Intent(this, AktivitasPage::class.java)
+                    startActivity(intent1)
+                }
+                R.id.komunitas -> {
+                    val intent2 = Intent(this, KomunitasPage::class.java)
+                    startActivity(intent2)
+                }
+                R.id.profile -> {
+                    val intent3 = Intent(this, ProfilePage::class.java)
+                    startActivity(intent3)
+                }
+            }
+            false
+        }
 
         var pick_up = findViewById<ImageButton>(R.id.imageView30)
         var drop_off = findViewById<ImageButton>(R.id.imageView35)

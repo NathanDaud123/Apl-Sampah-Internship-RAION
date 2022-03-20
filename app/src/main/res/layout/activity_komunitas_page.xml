@@ -22,14 +22,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins"
+            android:id="@+id/komunitas"
             android:text="Komunitas"
             android:textColor="@color/black"
             android:textSize="40sp"
+            android:layout_marginTop="25sp"
             app:layout_constraintBottom_toTopOf="@+id/imageView46"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.6" />
+            app:layout_constraintTop_toTopOf="parent" />
 
 
         <ImageView
@@ -38,8 +39,9 @@
             android:layout_height="63dp"
             android:layout_marginTop="148dp"
             android:src="@drawable/prof0"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.112"
+            android:layout_marginStart="40sp"
+            app:layout_constraintEnd_toStartOf="@id/imageView46"
+            app:layout_constraintHorizontal_bias="0.063"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -48,12 +50,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
+            android:layout_marginEnd="40sp"
             android:src="@drawable/recluaran"
             app:layout_constraintBottom_toBottomOf="@+id/imageView44"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.205"
             app:layout_constraintStart_toEndOf="@+id/imageView44"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView44"
             app:layout_constraintVertical_bias="1.0" />
 
         <ImageView
@@ -72,31 +75,30 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/search"
+            android:layout_marginStart="15sp"
             app:layout_constraintBottom_toBottomOf="@+id/imageView45"
             app:layout_constraintEnd_toStartOf="@+id/editText"
             app:layout_constraintStart_toStartOf="@+id/imageView45"
-            app:layout_constraintTop_toTopOf="@+id/imageView45"
-            app:layout_constraintVertical_bias="0.638" />
+            app:layout_constraintTop_toTopOf="@+id/imageView45"/>
 
         <EditText
             android:id="@+id/editText"
             android:layout_width="241dp"
-            android:layout_height="45dp"
-            android:layout_marginBottom="7sp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
             android:hint="@string/type_something_here"
             android:textColorHint="#7A7D84"
+            android:layout_marginStart="40sp"
             app:layout_constraintBottom_toBottomOf="@+id/imageView45"
             app:layout_constraintEnd_toEndOf="@+id/imageView45"
-            app:layout_constraintHorizontal_bias="0.824"
             app:layout_constraintStart_toStartOf="@+id/imageView45"
-            app:layout_constraintTop_toTopOf="@+id/imageView45"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintTop_toTopOf="@+id/imageView45"/>
 
         <EditText
             android:id="@+id/text1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="7sp"
+            android:background="@android:color/transparent"
             android:hint="@string/type_something_here"
             android:inputType="text"
             android:selectAllOnFocus="true"
@@ -105,10 +107,9 @@
             android:textColorHint="#7A7D84"
             app:layout_constraintBottom_toBottomOf="@+id/imageView46"
             app:layout_constraintEnd_toEndOf="@+id/imageView46"
-            app:layout_constraintHorizontal_bias="0.19"
+            app:layout_constraintHorizontal_bias="0.241"
             app:layout_constraintStart_toStartOf="@+id/imageView46"
-            app:layout_constraintTop_toTopOf="@+id/imageView46"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintTop_toTopOf="@+id/imageView46"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

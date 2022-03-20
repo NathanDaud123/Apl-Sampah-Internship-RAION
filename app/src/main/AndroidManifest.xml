@@ -26,25 +26,13 @@
             android:name=".SubDropOffKertas"
             android:exported="false" />
         <activity
+            android:name=".PickUpBerhasil"
+            android:exported="false" />
+        <activity
+            android:name=".KonfirmasiPage"
+            android:exported="false" />
+        <activity
             android:name=".DetailAturJadwal"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".SubPickUpKaca"
-            android:exported="false" />
-        <activity
-            android:name=".SubPickUpAlumunium"
-            android:exported="false" />
-        <activity
-            android:name=".SubPickUpKertas"
-            android:exported="false" />
-        <activity
-            android:name=".AktivitasPage2"
             android:exported="false" />
         <activity
             android:name=".DetailHariIni"
@@ -78,7 +66,13 @@
             android:exported="false" />
         <activity
             android:name=".HomePage"
-            android:exported="false" />
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".WelcomingPage" />
         <activity
             android:name=".LoginPage"
