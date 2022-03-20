@@ -1,5 +1,6 @@
 package user.example.sampah
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
@@ -15,6 +16,14 @@ class UbahProfilePage : AppCompatActivity() {
 
         editteks.setOnClickListener{
 
+        }
+
+        //back button
+        var back = findViewById<ImageView>(R.id.backButton)
+
+        back.setOnClickListener {
+            var inten = Intent(this, ProfilePage::class.java)
+            startActivity(inten)
         }
 
 
