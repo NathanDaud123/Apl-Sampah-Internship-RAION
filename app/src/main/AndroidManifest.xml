@@ -62,9 +62,6 @@
             android:name=".ProfilePage"
             android:exported="false" />
         <activity
-            android:name=".PickUpKatKertas"
-            android:exported="false" />
-        <activity
             android:name=".MovementDetail"
             android:exported="false" />
         <activity
