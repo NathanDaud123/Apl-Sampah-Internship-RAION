@@ -501,7 +501,7 @@
         />
 
     <TextView
-        android:id="@+id/PickUpText"
+        android:id="@+id/PickUpTextWhite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_medium"
@@ -514,12 +514,36 @@
         app:layout_constraintTop_toTopOf="@+id/PickUpButton" />
 
     <TextView
-        android:id="@+id/DropOffText"
+        android:id="@+id/pickUpTextGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/PrimaryGreen"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/PickUpButton"
+        app:layout_constraintEnd_toEndOf="@+id/PickUpButton"
+        app:layout_constraintStart_toStartOf="@+id/PickUpButton"
+        app:layout_constraintTop_toTopOf="@+id/PickUpButton" />
+
+    <TextView
+        android:id="@+id/DropOffTextGreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_medium"
         android:text="Drop Off"
         android:textColor="@color/PrimaryGreen"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/DropOffButton"
+        app:layout_constraintEnd_toEndOf="@+id/DropOffButton"
+        app:layout_constraintStart_toStartOf="@+id/DropOffButton"
+        app:layout_constraintTop_toTopOf="@+id/DropOffButton" />
+
+    <TextView
+        android:id="@+id/dropOffTextWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/white"
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="@+id/DropOffButton"
         app:layout_constraintEnd_toEndOf="@+id/DropOffButton"

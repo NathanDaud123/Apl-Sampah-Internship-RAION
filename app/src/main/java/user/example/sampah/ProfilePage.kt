@@ -55,6 +55,14 @@ class ProfilePage : AppCompatActivity() {
             startActivity(intent)
         }
 
+        //intent ke login page
+        var keluar = findViewById<TextView>(R.id.TulisanKeluar)
+
+        keluar.setOnClickListener {
+            var intent = Intent(this, LoginPage::class.java)
+            startActivity(intent)
+        }
+
 
     }
 }

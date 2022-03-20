@@ -501,7 +501,7 @@
         app:srcCompat="@drawable/rectangle_3599"/>
 
     <TextView
-        android:id="@+id/PickUpText"
+        android:id="@+id/PickUpTextWhite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_medium"
@@ -514,7 +514,7 @@
         app:layout_constraintTop_toTopOf="@+id/PickUpButton" />
 
     <TextView
-        android:id="@+id/DropOffText"
+        android:id="@+id/DropOffTextGreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_medium"
