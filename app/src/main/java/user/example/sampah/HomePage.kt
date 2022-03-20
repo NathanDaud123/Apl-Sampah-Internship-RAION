@@ -4,7 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageButton
-import android.widget.TextView
 import androidx.annotation.Nullable
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -21,16 +20,16 @@ class HomePage : AppCompatActivity() {
         bottomNavigationView.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.aktivitas -> {
-                    val intent2 = Intent(this, AktivitasPage::class.java)
-                    startActivity(intent2)
+                    val intent1 = Intent(this, AktivitasPage::class.java)
+                    startActivity(intent1)
                 }
                 R.id.komunitas -> {
-                    val intent3 = Intent(this, KomunitasPage::class.java)
-                    startActivity(intent3)
+                    val intent2 = Intent(this, KomunitasPage::class.java)
+                    startActivity(intent2)
                 }
                 R.id.profile -> {
-                    val intent4 = Intent(this, ProfilePage::class.java)
-                    startActivity(intent4)
+                    val intent3 = Intent(this, ProfilePage::class.java)
+                    startActivity(intent3)
                 }
             }
             false
