@@ -14,6 +14,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sampah">
         <activity
+            android:name=".DropOffDetailHariIni"
+            android:exported="false" />
+        <activity
+            android:name=".SubDropOffElektronik"
+            android:exported="false" />
+        <activity
+            android:name=".SubDropOffBesi"
+            android:exported="false" />
+        <activity
+            android:name=".SubDropOffPlastik"
+            android:exported="false" />
+        <activity
+            android:name=".DropOff"
+            android:exported="false" />
+        <activity
             android:name=".SubDropOffKaca"
             android:exported="false" />
         <activity
@@ -25,6 +40,8 @@
         <activity
             android:name=".PickUpBerhasil"
             android:exported="false" />
+        <activity android:name=".SubPickUpKertas"
+            android:exported="false"/>
         <activity
             android:name=".KonfirmasiPage"
             android:exported="false" />
@@ -63,13 +80,7 @@
             android:exported="false" />
         <activity
             android:name=".HomePage"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false"/>
         <activity android:name=".WelcomingPage" />
         <activity
             android:name=".LoginPage"

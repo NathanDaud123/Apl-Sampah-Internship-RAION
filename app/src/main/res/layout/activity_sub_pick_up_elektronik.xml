@@ -1017,18 +1017,19 @@
 
             </ImageButton>
 
-            <ImageView
+            <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/plus8"
                 android:layout_marginEnd="4sp"
+                android:background="@android:color/transparent"
                 app:layout_constraintStart_toEndOf="@id/putih8"
                 app:layout_constraintTop_toTopOf="@id/berat8"
                 app:layout_constraintEnd_toEndOf="@id/berat8"
                 app:layout_constraintBottom_toBottomOf="@id/berat8"
                 android:src="@drawable/ic_plus">
 
-            </ImageView>
+            </ImageButton>
 
             <TextView
                 android:id="@+id/num8"
@@ -1132,10 +1133,11 @@
 
             </ImageButton>
 
-            <ImageView
+            <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/plus9"
+                android:background="@android:color/transparent"
                 android:layout_marginEnd="4sp"
                 app:layout_constraintStart_toEndOf="@id/putih9"
                 app:layout_constraintTop_toTopOf="@id/berat9"
@@ -1143,7 +1145,7 @@
                 app:layout_constraintBottom_toBottomOf="@id/berat9"
                 android:src="@drawable/ic_plus">
 
-            </ImageView>
+            </ImageButton>
 
             <TextView
                 android:id="@+id/num9"

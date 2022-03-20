@@ -24,23 +24,53 @@ class PickUp : AppCompatActivity() {
         val item = findViewById<TextView>(R.id.item)
 
         var tempTotal:Int
+        var itemBesi:String
         var itemPlastik:String
+        var itemKertas:String
         var tempJenis:String
 
         var kgPlastik = intent.getStringExtra("estimasiPlastik")
         if(intent.getStringExtra("estimasiPlastik").equals("0")){
             itemPlastik = ""
         } else {
-            itemPlastik = "Plastik"
+            itemPlastik = "Plastik "
         }
+
+        var kgBesi = intent.getStringExtra("estimasiBesi")
+        if(intent.getStringExtra("estimasiBesi").equals("0")){
+            itemBesi = ""
+        } else {
+            itemBesi = "Besi "
+        }
+
+        var kgKertas = intent.getStringExtra("estimasiKertas")
+        if(intent.getStringExtra("estimasiKertas").equals("0")){
+            itemKertas = ""
+        } else {
+            itemKertas = "Kertas "
+        }
+
 
         tempTotal = 0
+        var tempPlastik:Int = 0
+        var tempBesi:Int = 0
+        var tempKertas:Int = 0
 
         if (kgPlastik != null) {
-            tempTotal = kgPlastik.toInt()
+            tempPlastik = kgPlastik.toInt()
         }
 
-        tempJenis = itemPlastik
+        if (kgBesi != null) {
+            tempBesi = kgBesi.toInt()
+        }
+
+        if (kgKertas != null) {
+            tempKertas = kgKertas.toInt()
+        }
+
+        tempTotal = tempPlastik + tempBesi + tempKertas
+
+        tempJenis = itemKertas + itemPlastik + itemBesi
 
         kg.setText(Integer.toString(tempTotal))
         item.setText(tempJenis)
