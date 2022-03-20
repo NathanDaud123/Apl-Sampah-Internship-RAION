@@ -14,14 +14,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sampah">
         <activity
+            android:name=".PickUpBerhasil"
+            android:exported="false" />
+        <activity
+            android:name=".KonfirmasiPage"
+            android:exported="false" />
+        <activity
             android:name=".DetailAturJadwal"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".DetailHariIni"
             android:exported="true" />
@@ -36,7 +36,7 @@
             android:exported="false" />
         <activity
             android:name=".PickUp"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".ProfilePage"
             android:exported="false" />
@@ -57,7 +57,13 @@
             android:exported="false" />
         <activity
             android:name=".HomePage"
-            android:exported="false" />
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".WelcomingPage" />
         <activity
             android:name=".LoginPage"
@@ -65,7 +71,7 @@
         <activity android:name=".RegistrationPage" />
         <activity
             android:name=".SplashScreen"
-            android:exported="false" />
+            android:exported="true"/>
 
         <meta-data
             android:name="preloaded_fonts"

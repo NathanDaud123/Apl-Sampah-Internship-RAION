@@ -14,8 +14,11 @@
         <entry key="..\:/Users/812ha/AndroidStudioProjects/Apl-Sampah-Internship-RAION/app/src/main/res/layout/list_image.xml" value="0.28331822302810517" />
         <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/drawable/ic_baseline_wifi_24.xml" value="0.119" />
         <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2555" />
+        <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/drawable/ic_rec_bawah_berhasil.xml" value="0.2555" />
         <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/drawable/ic_rec_jam.xml" value="0.251" />
         <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/drawable/ic_recluar_plastik.xml" value="0.1" />
+        <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/drawable/ic_rectangle_lebar.xml" value="0.1035" />
+        <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/drawable/ic_rectangle_lebar1.xml" value="0.1035" />
         <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/layout-w1240dp/activity_main3.xml" value="0.14678899082568808" />
         <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/layout-w936dp/activity_main3.xml" value="0.2191780821917808" />
         <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/layout/activity_aktivitas_page.xml" value="0.2" />
@@ -26,6 +29,7 @@
         <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/layout/activity_informasi_detail.xml" value="0.264" />
         <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/layout/activity_komunitas1.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/layout/activity_komunitas_page.xml" value="0.264" />
+        <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/layout/activity_konfirmasi_page.xml" value="0.2" />
         <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/layout/activity_main.xml" value="0.176" />
         <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/layout/activity_main2.xml" value="0.264" />
         <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/layout/activity_main3.xml" value="0.264" />
@@ -34,6 +38,7 @@
         <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/layout/activity_pick_up.xml" value="0.264" />
         <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/layout/activity_pick_up1.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/layout/activity_pick_up2.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/layout/activity_pick_up_berhasil.xml" value="0.176" />
         <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/layout/activity_pick_up_camera.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/layout/activity_pick_up_kat_kertas.xml" value="0.2" />
         <entry key="..\:/Users/Nathan/AndroidStudioProjects/Sampah/app/src/main/res/layout/activity_profile_page.xml" value="0.20521590423257802" />
