@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.ImageView
+import android.widget.TextView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class ProfilePage : AppCompatActivity() {
@@ -32,5 +34,27 @@ class ProfilePage : AppCompatActivity() {
             }
             false
         }
+
+        //intent ke ubah profile
+        var gambarUbah = findViewById<ImageView>(R.id.gambarUbahProfil)
+        var teksUbah = findViewById<TextView>(R.id.TulisanUbahProfil)
+        var buttonUbah = findViewById<ImageView>(R.id.buttonUbahProfil)
+
+        gambarUbah.setOnClickListener {
+            var intent = Intent(this, UbahProfilePage::class.java)
+            startActivity(intent)
+        }
+
+        teksUbah.setOnClickListener {
+            var intent = Intent(this, UbahProfilePage::class.java)
+            startActivity(intent)
+        }
+
+        buttonUbah.setOnClickListener {
+            var intent = Intent(this, UbahProfilePage::class.java)
+            startActivity(intent)
+        }
+
+
     }
 }
