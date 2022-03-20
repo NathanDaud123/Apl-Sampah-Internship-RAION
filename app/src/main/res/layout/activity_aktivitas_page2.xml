@@ -317,7 +317,7 @@
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView76"
+        app:layout_constraintTop_toBottomOf="@+id/DropOffButton"
         app:srcCompat="@drawable/rectangle_3618" />
 
     <ImageView
@@ -382,7 +382,7 @@
         app:srcCompat="@drawable/trash" />
 
     <TextView
-        android:id="@+id/textView71"
+        android:id="@+id/HargaAktivitas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_medium"
@@ -479,7 +479,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView73" />
 
     <ImageButton
-        android:id="@+id/imageView74"
+        android:id="@+id/PickUpButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
@@ -490,41 +490,41 @@
         app:srcCompat="@drawable/rectangle_3600" />
 
     <ImageButton
-        android:id="@+id/imageView76"
+        android:id="@+id/DropOffButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="@color/kremHalus"
-        app:layout_constraintStart_toEndOf="@+id/imageView74"
+        app:layout_constraintStart_toEndOf="@+id/PickUpButton"
         app:layout_constraintTop_toBottomOf="@+id/textView15"
         app:srcCompat="@drawable/rectangle_3599"/>
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/PickUpText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_medium"
         android:text="Pick Up"
         android:textColor="@color/PrimaryGreen"
         android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView74"
-        app:layout_constraintEnd_toEndOf="@+id/imageView74"
-        app:layout_constraintStart_toStartOf="@+id/imageView74"
-        app:layout_constraintTop_toTopOf="@+id/imageView74" />
+        app:layout_constraintBottom_toBottomOf="@+id/PickUpButton"
+        app:layout_constraintEnd_toEndOf="@+id/PickUpButton"
+        app:layout_constraintStart_toStartOf="@+id/PickUpButton"
+        app:layout_constraintTop_toTopOf="@+id/PickUpButton" />
 
     <TextView
-        android:id="@+id/textView75"
+        android:id="@+id/DropOffText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_medium"
         android:text="Drop Off"
         android:textColor="@color/white"
         android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView76"
-        app:layout_constraintEnd_toEndOf="@+id/imageView76"
-        app:layout_constraintStart_toStartOf="@+id/imageView76"
-        app:layout_constraintTop_toTopOf="@+id/imageView76" />
+        app:layout_constraintBottom_toBottomOf="@+id/DropOffButton"
+        app:layout_constraintEnd_toEndOf="@+id/DropOffButton"
+        app:layout_constraintStart_toStartOf="@+id/DropOffButton"
+        app:layout_constraintTop_toTopOf="@+id/DropOffButton" />
 
     <ImageView
         android:id="@+id/imageView79"
@@ -550,7 +550,7 @@
         app:srcCompat="@drawable/trash2" />
 
     <TextView
-        android:id="@+id/textView76"
+        android:id="@+id/TextRiwayat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -572,7 +572,7 @@
         android:textColor="@color/MediumGrey"
         android:textSize="12dp"
         app:layout_constraintStart_toEndOf="@+id/imageView80"
-        app:layout_constraintTop_toBottomOf="@+id/textView76" />
+        app:layout_constraintTop_toBottomOf="@+id/TextRiwayat" />
 
     <TextView
         android:id="@+id/textView79"
@@ -599,7 +599,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView77" />
 
     <TextView
-        android:id="@+id/textView80"
+        android:id="@+id/AlamatRiwayat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
