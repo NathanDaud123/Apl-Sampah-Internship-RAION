@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/kremHalus"
-    tools:context=".AktivitasPage">
+    android:backgroundTint="@color/kremHalus"
+    android:foregroundTint="@color/kremHalus"
+    tools:context=".AktivitasPage2">
 
     <TextView
         android:id="@+id/textView12"
@@ -485,8 +487,7 @@
         android:backgroundTint="@color/kremHalus"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15"
-        app:srcCompat="@drawable/rectangle_3599"
-         />
+        app:srcCompat="@drawable/rectangle_3600" />
 
     <ImageButton
         android:id="@+id/imageView76"
@@ -497,8 +498,7 @@
         android:backgroundTint="@color/kremHalus"
         app:layout_constraintStart_toEndOf="@+id/imageView74"
         app:layout_constraintTop_toBottomOf="@+id/textView15"
-        app:srcCompat="@drawable/rectangle_3600"
-        />
+        app:srcCompat="@drawable/rectangle_3599"/>
 
     <TextView
         android:id="@+id/textView17"
@@ -506,7 +506,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_medium"
         android:text="Pick Up"
-        android:textColor="@color/white"
+        android:textColor="@color/PrimaryGreen"
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView74"
         app:layout_constraintEnd_toEndOf="@+id/imageView74"
@@ -519,7 +519,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_medium"
         android:text="Drop Off"
-        android:textColor="@color/PrimaryGreen"
+        android:textColor="@color/white"
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView76"
         app:layout_constraintEnd_toEndOf="@+id/imageView76"
@@ -556,7 +556,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/poppins_medium"
-        android:text="Pick Up"
+        android:text="Drop Off - TrashShelter"
         android:textColor="@color/baseblack"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/imageView80"

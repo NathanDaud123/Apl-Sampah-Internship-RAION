@@ -36,7 +36,7 @@ class RegistrationPage : AppCompatActivity(), View.OnClickListener {
         //page register button daftar ke daftar page
         var buttonDaftar = findViewById<TextView>(R.id.buttonDaftarRegister)
         buttonDaftar.setOnClickListener {
-            var inten = Intent(this, LoginPage::class.java)
+            var inten = Intent(this, HomePage::class.java)
             startActivity(inten)
         }
 
