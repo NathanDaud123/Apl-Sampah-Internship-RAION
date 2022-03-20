@@ -29,6 +29,9 @@
             android:name=".DropOff"
             android:exported="false" />
         <activity
+            android:name=".UbahProfilePage"
+            android:exported="false" />
+        <activity
             android:name=".SubDropOffKaca"
             android:exported="false" />
         <activity
@@ -40,8 +43,6 @@
         <activity
             android:name=".PickUpBerhasil"
             android:exported="false" />
-        <activity android:name=".SubPickUpKertas"
-            android:exported="false"/>
         <activity
             android:name=".KonfirmasiPage"
             android:exported="false" />
@@ -86,9 +87,19 @@
             android:name=".LoginPage"
             android:label="@string/title_activity_main3" />
         <activity android:name=".RegistrationPage" />
+
+
         <activity
             android:name=".SplashScreen"
-            android:exported="false" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name = "android.intent.action.MAIN"/>
+
+                <category android:name = "android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+
 
         <meta-data
             android:name="preloaded_fonts"

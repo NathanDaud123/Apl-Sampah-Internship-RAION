@@ -145,7 +145,7 @@
                 app:layout_constraintTop_toTopOf="@+id/imageView88" />
 
             <ImageView
-                android:id="@+id/imageView90"
+                android:id="@+id/gambarUbahProfil"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
@@ -155,7 +155,7 @@
                 app:srcCompat="@drawable/user_edit" />
 
             <TextView
-                android:id="@+id/textView92"
+                android:id="@+id/TulisanUbahProfil"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
@@ -165,11 +165,11 @@
                 android:textColor="@color/PrimaryGreen"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.007"
-                app:layout_constraintStart_toEndOf="@+id/imageView90"
+                app:layout_constraintStart_toEndOf="@+id/gambarUbahProfil"
                 app:layout_constraintTop_toBottomOf="@+id/imageView83" />
 
             <ImageView
-                android:id="@+id/imageView91"
+                android:id="@+id/buttonUbahProfil"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -185,10 +185,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="114dp"
                 android:layout_marginEnd="32dp"
-                android:tint="@color/PrimaryGreen"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView83"
-                app:srcCompat="@drawable/drop3" />
+                app:srcCompat="@drawable/drop3"
+                app:tint="@color/PrimaryGreen" />
 
             <ImageView
                 android:id="@+id/imageView99"
@@ -245,7 +245,7 @@
                 android:textColor="@color/PrimaryGreen"
                 android:textSize="20dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView90" />
+                app:layout_constraintTop_toBottomOf="@+id/gambarUbahProfil" />
 
             <ImageView
                 android:id="@+id/imageView93"
@@ -318,7 +318,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView98" />
 
             <TextView
-                android:id="@+id/textView100"
+                android:id="@+id/TulisanKeluar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
